@@ -13,6 +13,6 @@ plugins {
 
 include("common")
 include("fabric")
-include("forge")
+//include("forge")
 
 rootProject.name = "Railway"
