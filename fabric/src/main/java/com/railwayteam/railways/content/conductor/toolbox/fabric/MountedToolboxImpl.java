@@ -19,7 +19,7 @@
 package com.railwayteam.railways.content.conductor.toolbox.fabric;
 
 import com.railwayteam.railways.content.conductor.toolbox.MountedToolbox;
-import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
+import net.fabricmc.fabric.api.menu.v1.ExtendedMenuProvider;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
@@ -30,7 +30,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class MountedToolboxImpl {
 	public static void openMenu(ServerPlayer player, MountedToolbox toolbox) {
-		player.openMenu(new ExtendedScreenHandlerFactory() {
+		player.openMenu(new ExtendedMenuProvider() {
 			@Override
 			public void writeScreenOpeningData(ServerPlayer player, FriendlyByteBuf buf) {
 				toolbox.sendToMenu(buf);

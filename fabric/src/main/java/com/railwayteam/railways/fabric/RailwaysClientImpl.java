@@ -27,7 +27,7 @@ import com.railwayteam.railways.registry.CRExtraDisplayTags;
 import com.simibubi.create.foundation.utility.Components;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
-import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.ModelLayerRegistry;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
@@ -57,7 +57,7 @@ public class RailwaysClientImpl implements ClientModInitializer {
 	}
 
 	public static void registerModelLayer(ModelLayerLocation layer, Supplier<LayerDefinition> definition) {
-		EntityModelLayerRegistry.registerModelLayer(layer, definition::get);
+		ModelLayerRegistry.registerModelLayer(layer, definition::get);
 	}
 
 	public static void registerBuiltinPack(String id, String name) {

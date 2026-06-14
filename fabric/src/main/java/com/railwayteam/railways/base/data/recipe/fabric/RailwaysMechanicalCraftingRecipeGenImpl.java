@@ -19,7 +19,7 @@
 package com.railwayteam.railways.base.data.recipe.fabric;
 
 import com.railwayteam.railways.base.data.recipe.RailwaysMechanicalCraftingRecipeGen;
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
@@ -34,7 +34,7 @@ public class RailwaysMechanicalCraftingRecipeGenImpl extends RailwaysMechanicalC
 
     public static RecipeProvider create(PackOutput gen) {
         RailwaysMechanicalCraftingRecipeGenImpl provider = new RailwaysMechanicalCraftingRecipeGenImpl(gen);
-        return new FabricRecipeProvider((FabricDataOutput) gen) {
+        return new FabricRecipeProvider((FabricPackOutput) gen) {
             @Override
             public void buildRecipes(Consumer<FinishedRecipe> exporter) {
                 provider.buildRecipes(exporter);
