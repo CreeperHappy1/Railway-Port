@@ -24,7 +24,7 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.*;
 import com.mojang.math.Axis;
 import com.railwayteam.railways.config.CRConfigs;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
+import com.zurrtum.create.foundation.utility.animation.LerpedFloat;
 import net.minecraft.client.Camera;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.particle.*;

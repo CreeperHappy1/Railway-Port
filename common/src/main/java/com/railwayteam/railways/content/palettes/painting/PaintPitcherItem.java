@@ -25,7 +25,7 @@ import com.railwayteam.railways.registry.CRAdvancements;
 import com.railwayteam.railways.registry.CRItems;
 import com.railwayteam.railways.registry.CRTags;
 import com.railwayteam.railways.util.ItemUtils;
-import com.simibubi.create.foundation.utility.Components;
+import com.zurrtum.create.foundation.utility.Components;
 import dev.architectury.injectables.annotations.ExpectPlatform;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.advancements.CriteriaTriggers;

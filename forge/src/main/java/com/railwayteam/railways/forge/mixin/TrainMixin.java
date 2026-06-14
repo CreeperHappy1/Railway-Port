@@ -19,7 +19,7 @@
 package com.railwayteam.railways.forge.mixin;
 
 import com.railwayteam.railways.registry.CRTags;
-import com.simibubi.create.content.trains.entity.Train;
+import com.zurrtum.create.content.trains.entity.Train;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import org.spongepowered.asm.mixin.Mixin;

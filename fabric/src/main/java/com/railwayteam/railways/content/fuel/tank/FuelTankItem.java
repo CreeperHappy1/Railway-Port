@@ -19,7 +19,7 @@
 package com.railwayteam.railways.content.fuel.tank;
 
 import com.railwayteam.railways.registry.fabric.CRBlockEntitiesImpl;
-import com.simibubi.create.api.connectivity.ConnectivityHandler;
+import com.zurrtum.create.api.connectivity.ConnectivityHandler;
 import io.github.fabricators_of_create.porting_lib.fluids.FluidStack;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

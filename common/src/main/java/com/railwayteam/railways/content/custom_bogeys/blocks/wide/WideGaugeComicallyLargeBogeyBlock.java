@@ -19,9 +19,9 @@
 package com.railwayteam.railways.content.custom_bogeys.blocks.wide;
 
 import com.railwayteam.railways.registry.CRBogeyStyles;
-import com.simibubi.create.content.trains.bogey.BogeySizes;
-import com.simibubi.create.content.trains.bogey.BogeySizes.BogeySize;
-import com.simibubi.create.content.trains.bogey.BogeyStyle;
+import com.zurrtum.create.content.trains.bogey.BogeySizes;
+import com.zurrtum.create.content.trains.bogey.BogeySizes.BogeySize;
+import com.zurrtum.create.content.trains.bogey.BogeyStyle;
 import net.minecraft.world.phys.Vec3;
 
 public class WideGaugeComicallyLargeBogeyBlock extends WideGaugeBogeyBlock {

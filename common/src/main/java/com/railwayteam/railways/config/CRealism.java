@@ -18,7 +18,7 @@
 
 package com.railwayteam.railways.config;
 
-import com.simibubi.create.foundation.config.ConfigBase;
+import com.zurrtum.create.foundation.config.ConfigBase;
 
 @SuppressWarnings("unused")
 public class CRealism extends ConfigBase {

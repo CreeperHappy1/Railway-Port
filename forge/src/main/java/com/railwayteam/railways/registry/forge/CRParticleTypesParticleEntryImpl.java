@@ -20,8 +20,8 @@ package com.railwayteam.railways.registry.forge;
 
 import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.registry.CRParticleTypes;
-import com.simibubi.create.foundation.particle.ICustomParticleData;
-import com.simibubi.create.foundation.particle.ICustomParticleDataWithSprite;
+import com.zurrtum.create.foundation.particle.ICustomParticleData;
+import com.zurrtum.create.foundation.particle.ICustomParticleDataWithSprite;
 import net.minecraft.client.particle.ParticleEngine;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleType;

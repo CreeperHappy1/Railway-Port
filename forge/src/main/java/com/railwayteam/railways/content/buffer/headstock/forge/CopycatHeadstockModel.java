@@ -22,14 +22,14 @@ import com.google.common.collect.ImmutableList;
 import com.railwayteam.railways.content.buffer.IDyedBuffer;
 import com.railwayteam.railways.content.buffer.headstock.CopycatHeadstockBlock;
 import com.railwayteam.railways.registry.CRBlocks;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.decoration.copycat.CopycatBlock;
-import com.simibubi.create.content.decoration.copycat.CopycatModel;
-import com.simibubi.create.content.decoration.copycat.CopycatSpecialCases;
-import com.simibubi.create.content.decoration.copycat.FilteredBlockAndTintGetter;
-import com.simibubi.create.foundation.model.BakedModelHelper;
-import com.simibubi.create.foundation.model.BakedQuadHelper;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.zurrtum.create.AllBlocks;
+import com.zurrtum.create.content.decoration.copycat.CopycatBlock;
+import com.zurrtum.create.content.decoration.copycat.CopycatModel;
+import com.zurrtum.create.content.decoration.copycat.CopycatSpecialCases;
+import com.zurrtum.create.content.decoration.copycat.FilteredBlockAndTintGetter;
+import com.zurrtum.create.foundation.model.BakedModelHelper;
+import com.zurrtum.create.foundation.model.BakedQuadHelper;
+import com.zurrtum.create.foundation.utility.Iterate;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
@@ -65,7 +65,7 @@ import java.util.function.Predicate;
 import java.util.function.UnaryOperator;
 
 import static com.railwayteam.railways.content.buffer.BufferModelUtils.getSwapper;
-import static com.simibubi.create.content.decoration.copycat.CopycatModel.getModelOf;
+import static com.zurrtum.create.content.decoration.copycat.CopycatModel.getModelOf;
 
 @MethodsReturnNonnullByDefault
 public class CopycatHeadstockModel implements BakedModel {

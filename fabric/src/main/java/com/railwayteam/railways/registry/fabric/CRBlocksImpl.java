@@ -24,14 +24,14 @@ import com.railwayteam.railways.content.fuel.tank.FuelTankBlock;
 import com.railwayteam.railways.content.fuel.tank.FuelTankGenerator;
 import com.railwayteam.railways.content.fuel.tank.FuelTankItem;
 import com.railwayteam.railways.content.fuel.tank.FuelTankModel;
-import com.simibubi.create.AllTags;
-import com.simibubi.create.api.connectivity.ConnectivityHandler;
-import com.simibubi.create.content.contraptions.BlockMovementChecks;
-import com.simibubi.create.content.contraptions.BlockMovementChecks.CheckResult;
-import com.simibubi.create.content.contraptions.actors.psi.PortableStorageInterfaceMovement;
-import com.simibubi.create.foundation.data.AssetLookup;
-import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.simibubi.create.foundation.data.SharedProperties;
+import com.zurrtum.create.AllTags;
+import com.zurrtum.create.api.connectivity.ConnectivityHandler;
+import com.zurrtum.create.content.contraptions.BlockMovementChecks;
+import com.zurrtum.create.content.contraptions.BlockMovementChecks.CheckResult;
+import com.zurrtum.create.content.contraptions.actors.psi.PortableStorageInterfaceMovement;
+import com.zurrtum.create.foundation.data.AssetLookup;
+import com.zurrtum.create.foundation.data.CreateRegistrate;
+import com.zurrtum.create.foundation.data.SharedProperties;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
@@ -41,10 +41,10 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.MapColor;
 
-import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;
-import static com.simibubi.create.foundation.data.ModelGen.customItemModel;
-import static com.simibubi.create.foundation.data.TagGen.axeOrPickaxe;
-import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
+import static com.zurrtum.create.AllMovementBehaviours.movementBehaviour;
+import static com.zurrtum.create.foundation.data.ModelGen.customItemModel;
+import static com.zurrtum.create.foundation.data.TagGen.axeOrPickaxe;
+import static com.zurrtum.create.foundation.data.TagGen.pickaxeOnly;
 
 public class CRBlocksImpl {
     private static final CreateRegistrate REGISTRATE = Railways.registrate();

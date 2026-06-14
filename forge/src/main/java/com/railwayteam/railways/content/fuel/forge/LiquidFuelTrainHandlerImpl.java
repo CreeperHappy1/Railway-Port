@@ -19,7 +19,7 @@
 package com.railwayteam.railways.content.fuel.forge;
 
 import com.railwayteam.railways.content.fuel.LiquidFuelTrainHandler;
-import com.simibubi.create.foundation.fluid.CombinedTankWrapper;
+import com.zurrtum.create.foundation.fluid.CombinedTankWrapper;
 import net.minecraftforge.fluids.FluidStack;
 import net.minecraftforge.fluids.capability.IFluidHandler;
 

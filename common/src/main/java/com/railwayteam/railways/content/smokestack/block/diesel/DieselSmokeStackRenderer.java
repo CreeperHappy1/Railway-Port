@@ -20,9 +20,9 @@ package com.railwayteam.railways.content.smokestack.block.diesel;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.railwayteam.railways.registry.CRBlockPartials;
-import com.simibubi.create.foundation.blockEntity.renderer.SmartBlockEntityRenderer;
-import com.simibubi.create.foundation.render.CachedBufferer;
-import com.simibubi.create.foundation.render.SuperByteBuffer;
+import com.zurrtum.create.foundation.blockEntity.renderer.SmartBlockEntityRenderer;
+import com.zurrtum.create.foundation.render.CachedBufferer;
+import com.zurrtum.create.foundation.render.SuperByteBuffer;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;

@@ -23,12 +23,12 @@ import com.railwayteam.railways.content.buffer.headstock.CopycatHeadstockBarsBlo
 import com.railwayteam.railways.content.buffer.headstock.CopycatHeadstockBlock;
 import com.railwayteam.railways.content.buffer.headstock.CopycatHeadstockBlockEntity;
 import com.railwayteam.railways.registry.CRBlocks;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.decoration.copycat.CopycatBlock;
-import com.simibubi.create.content.decoration.copycat.CopycatSpecialCases;
-import com.simibubi.create.content.decoration.copycat.FilteredBlockAndTintGetter;
-import com.simibubi.create.foundation.model.BakedModelHelper;
-import com.simibubi.create.foundation.utility.Iterate;
+import com.zurrtum.create.AllBlocks;
+import com.zurrtum.create.content.decoration.copycat.CopycatBlock;
+import com.zurrtum.create.content.decoration.copycat.CopycatSpecialCases;
+import com.zurrtum.create.content.decoration.copycat.FilteredBlockAndTintGetter;
+import com.zurrtum.create.foundation.model.BakedModelHelper;
+import com.zurrtum.create.foundation.utility.Iterate;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.renderer.v1.RendererAccess;
@@ -78,7 +78,7 @@ import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
 import static com.railwayteam.railways.content.buffer.BufferModelUtils.getSwapper;
-import static com.simibubi.create.content.decoration.copycat.CopycatModel.getModelOf;
+import static com.zurrtum.create.content.decoration.copycat.CopycatModel.getModelOf;
 
 @Environment(EnvType.CLIENT)
 @ParametersAreNonnullByDefault

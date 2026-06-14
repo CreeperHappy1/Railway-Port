@@ -20,7 +20,7 @@ package com.railwayteam.railways.mixin;
 
 import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.config.CRConfigs;
-import com.simibubi.create.foundation.config.ui.ConfigHelper;
+import com.zurrtum.create.foundation.config.ui.ConfigHelper;
 import net.minecraftforge.fml.config.IConfigSpec;
 import net.minecraftforge.fml.config.ModConfig;
 import org.spongepowered.asm.mixin.Mixin;

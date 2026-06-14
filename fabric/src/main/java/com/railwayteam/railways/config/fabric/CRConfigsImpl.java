@@ -20,7 +20,7 @@ package com.railwayteam.railways.config.fabric;
 
 import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.config.CRConfigs;
-import com.simibubi.create.foundation.config.ConfigBase;
+import com.zurrtum.create.foundation.config.ConfigBase;
 import fuzs.forgeconfigapiport.api.config.v2.ForgeConfigRegistry;
 import fuzs.forgeconfigapiport.api.config.v2.ModConfigEvents;
 import net.minecraftforge.fml.config.ModConfig;

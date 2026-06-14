@@ -18,7 +18,7 @@
 
 package com.railwayteam.railways.compat;
 
-import com.simibubi.create.foundation.utility.Lang;
+import com.zurrtum.create.foundation.utility.Lang;
 import dev.architectury.injectables.annotations.ExpectPlatform;
 import org.jetbrains.annotations.Nullable;
 

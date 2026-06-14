@@ -18,10 +18,10 @@
 
 package com.railwayteam.railways.content.switches;
 
-import com.simibubi.create.content.redstone.displayLink.DisplayLinkContext;
-import com.simibubi.create.content.redstone.displayLink.source.SingleLineDisplaySource;
-import com.simibubi.create.content.redstone.displayLink.target.DisplayTargetStats;
-import com.simibubi.create.foundation.utility.Components;
+import com.zurrtum.create.content.redstone.displayLink.DisplayLinkContext;
+import com.zurrtum.create.content.redstone.displayLink.source.SingleLineDisplaySource;
+import com.zurrtum.create.content.redstone.displayLink.target.DisplayTargetStats;
+import com.zurrtum.create.foundation.utility.Components;
 import net.minecraft.network.chat.MutableComponent;
 
 public class SwitchDisplaySource extends SingleLineDisplaySource {

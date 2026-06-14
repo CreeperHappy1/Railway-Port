@@ -18,8 +18,8 @@
 
 package com.railwayteam.railways.config;
 
-import com.simibubi.create.foundation.config.ConfigBase;
-import com.simibubi.create.foundation.config.ui.ConfigAnnotations;
+import com.zurrtum.create.foundation.config.ConfigBase;
+import com.zurrtum.create.foundation.config.ui.ConfigAnnotations;
 
 @SuppressWarnings("unused")
 public class CServer extends ConfigBase {

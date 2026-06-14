@@ -20,11 +20,11 @@ package com.railwayteam.railways.content.custom_bogeys.blocks.base.be;
 
 import com.railwayteam.railways.content.custom_bogeys.blocks.base.CRBogeyBlock;
 import com.railwayteam.railways.registry.CRBogeyStyles;
-import com.simibubi.create.content.equipment.goggles.IHaveGoggleInformation;
-import com.simibubi.create.content.trains.bogey.AbstractBogeyBlockEntity;
-import com.simibubi.create.content.trains.bogey.BogeyStyle;
-import com.simibubi.create.foundation.utility.Components;
-import com.simibubi.create.foundation.utility.Lang;
+import com.zurrtum.create.content.equipment.goggles.IHaveGoggleInformation;
+import com.zurrtum.create.content.trains.bogey.AbstractBogeyBlockEntity;
+import com.zurrtum.create.content.trains.bogey.BogeyStyle;
+import com.zurrtum.create.foundation.utility.Components;
+import com.zurrtum.create.foundation.utility.Lang;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

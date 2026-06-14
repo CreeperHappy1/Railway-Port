@@ -20,7 +20,7 @@ package com.railwayteam.railways.mixin;
 
 import com.railwayteam.railways.content.switches.TrackSwitch;
 import com.railwayteam.railways.mixin_interfaces.ISwitchDisabledEdge;
-import com.simibubi.create.content.trains.graph.EdgeData;
+import com.zurrtum.create.content.trains.graph.EdgeData;
 import org.spongepowered.asm.mixin.Mixin;
 
 @Mixin(value = EdgeData.class, remap = false)

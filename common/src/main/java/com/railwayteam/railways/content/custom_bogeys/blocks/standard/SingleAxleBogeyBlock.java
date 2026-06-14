@@ -20,7 +20,7 @@ package com.railwayteam.railways.content.custom_bogeys.blocks.standard;
 
 import com.railwayteam.railways.content.custom_bogeys.blocks.base.CRBogeyBlock;
 import com.railwayteam.railways.registry.CRBogeyStyles;
-import com.simibubi.create.content.trains.bogey.BogeySizes;
+import com.zurrtum.create.content.trains.bogey.BogeySizes;
 import net.minecraft.world.phys.Vec3;
 
 public class SingleAxleBogeyBlock extends CRBogeyBlock {

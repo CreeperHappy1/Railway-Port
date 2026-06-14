@@ -24,7 +24,7 @@ import com.railwayteam.railways.registry.CRPackets;
 import com.railwayteam.railways.registry.CRPalettes;
 import com.railwayteam.railways.util.EntityUtils;
 import com.railwayteam.railways.util.packet.TagCycleSelectionPacket;
-import com.simibubi.create.foundation.gui.ScreenOpener;
+import com.zurrtum.create.foundation.gui.ScreenOpener;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;

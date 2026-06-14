@@ -18,9 +18,9 @@
 
 package com.railwayteam.railways.content.buffer.headstock.forge;
 
-import com.simibubi.create.content.decoration.copycat.CopycatModel;
-import com.simibubi.create.foundation.block.render.SpriteShiftEntry;
-import com.simibubi.create.foundation.model.BakedQuadHelper;
+import com.zurrtum.create.content.decoration.copycat.CopycatModel;
+import com.zurrtum.create.foundation.block.render.SpriteShiftEntry;
+import com.zurrtum.create.foundation.model.BakedQuadHelper;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.block.model.BakedQuad;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;

@@ -19,7 +19,7 @@
 package com.railwayteam.railways.content.custom_tracks.casing;
 
 import com.railwayteam.railways.Railways;
-import com.simibubi.create.foundation.model.BakedQuadHelper;
+import com.zurrtum.create.foundation.model.BakedQuadHelper;
 import net.minecraft.client.renderer.block.model.BakedQuad;
 import net.minecraft.client.renderer.block.model.ItemOverrides;
 import net.minecraft.client.renderer.block.model.ItemTransforms;
@@ -33,8 +33,8 @@ import org.jetbrains.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.simibubi.create.foundation.block.render.SpriteShiftEntry.getUnInterpolatedU;
-import static com.simibubi.create.foundation.block.render.SpriteShiftEntry.getUnInterpolatedV;
+import static com.zurrtum.create.foundation.block.render.SpriteShiftEntry.getUnInterpolatedU;
+import static com.zurrtum.create.foundation.block.render.SpriteShiftEntry.getUnInterpolatedV;
 
 public class SpriteCopyingBakedModel implements BakedModel {
 

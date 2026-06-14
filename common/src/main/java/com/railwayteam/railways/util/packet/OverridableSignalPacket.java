@@ -20,7 +20,7 @@ package com.railwayteam.railways.util.packet;
 
 import com.railwayteam.railways.content.distant_signals.IOverridableSignal;
 import com.railwayteam.railways.multiloader.S2CPacket;
-import com.simibubi.create.content.trains.signal.SignalBlockEntity;
+import com.zurrtum.create.content.trains.signal.SignalBlockEntity;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;

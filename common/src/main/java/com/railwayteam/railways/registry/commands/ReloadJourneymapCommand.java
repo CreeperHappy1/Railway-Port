@@ -22,7 +22,7 @@ import com.mojang.brigadier.builder.ArgumentBuilder;
 import com.railwayteam.railways.compat.Mods;
 import com.railwayteam.railways.compat.journeymap.DummyRailwayMarkerHandler;
 import com.railwayteam.railways.multiloader.Env;
-import com.simibubi.create.foundation.utility.Components;
+import com.zurrtum.create.foundation.utility.Components;
 import net.minecraft.commands.SharedSuggestionProvider;
 
 import static com.railwayteam.railways.multiloader.ClientCommands.*;

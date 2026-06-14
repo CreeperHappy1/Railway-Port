@@ -21,7 +21,7 @@ package com.railwayteam.railways.registry.advancement;
 import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.registry.CRAdvancements;
 import com.railwayteam.railways.registry.CRTriggers;
-import com.simibubi.create.foundation.utility.Components;
+import com.zurrtum.create.foundation.utility.Components;
 import com.tterrag.registrate.util.entry.ItemProviderEntry;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.CriterionTriggerInstance;

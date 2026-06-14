@@ -19,8 +19,8 @@
 package com.railwayteam.railways.content.semaphore;
 
 import com.railwayteam.railways.util.EntityUtils;
-import com.simibubi.create.foundation.placement.IPlacementHelper;
-import com.simibubi.create.foundation.placement.PlacementHelpers;
+import com.zurrtum.create.foundation.placement.IPlacementHelper;
+import com.zurrtum.create.foundation.placement.PlacementHelpers;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;

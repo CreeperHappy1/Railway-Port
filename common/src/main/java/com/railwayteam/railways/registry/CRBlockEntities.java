@@ -41,8 +41,8 @@ import com.railwayteam.railways.content.smokestack.block.diesel.DieselSmokeStack
 import com.railwayteam.railways.content.smokestack.block.be.SmokeStackBlockEntity;
 import com.railwayteam.railways.content.switches.TrackSwitchRenderer;
 import com.railwayteam.railways.content.switches.TrackSwitchBlockEntity;
-import com.simibubi.create.content.trains.bogey.BogeyBlockEntityRenderer;
-import com.simibubi.create.foundation.data.CreateRegistrate;
+import com.zurrtum.create.content.trains.bogey.BogeyBlockEntityRenderer;
+import com.zurrtum.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.BlockEntityEntry;
 import dev.architectury.injectables.annotations.ExpectPlatform;
 

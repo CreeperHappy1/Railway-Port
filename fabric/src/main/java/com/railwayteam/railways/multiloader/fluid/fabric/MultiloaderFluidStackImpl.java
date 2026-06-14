@@ -21,7 +21,7 @@ package com.railwayteam.railways.multiloader.fluid.fabric;
 import com.mojang.serialization.Codec;
 import com.railwayteam.railways.annotation.multiloader.ImplClass;
 import com.railwayteam.railways.multiloader.fluid.MultiloaderFluidStack;
-import com.simibubi.create.foundation.fluid.FluidIngredient;
+import com.zurrtum.create.foundation.fluid.FluidIngredient;
 import io.github.fabricators_of_create.porting_lib.fluids.FluidStack;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariantAttributes;

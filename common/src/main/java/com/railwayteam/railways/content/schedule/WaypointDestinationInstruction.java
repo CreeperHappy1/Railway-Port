@@ -19,7 +19,7 @@
 package com.railwayteam.railways.content.schedule;
 
 import com.railwayteam.railways.Railways;
-import com.simibubi.create.content.trains.schedule.destination.DestinationInstruction;
+import com.zurrtum.create.content.trains.schedule.destination.DestinationInstruction;
 import net.minecraft.resources.ResourceLocation;
 
 public class WaypointDestinationInstruction extends DestinationInstruction {

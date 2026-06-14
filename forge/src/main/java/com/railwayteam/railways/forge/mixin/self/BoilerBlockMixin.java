@@ -19,7 +19,7 @@
 package com.railwayteam.railways.forge.mixin.self;
 
 import com.railwayteam.railways.content.palettes.boiler.BoilerBlock;
-import com.simibubi.create.foundation.block.render.ReducedDestroyEffects;
+import com.zurrtum.create.foundation.block.render.ReducedDestroyEffects;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.extensions.common.IClientBlockExtensions;
 import org.spongepowered.asm.mixin.Mixin;

@@ -18,7 +18,7 @@
 
 package com.railwayteam.railways.content.conductor.vent;
 
-import com.simibubi.create.content.decoration.copycat.CopycatModel;
+import com.zurrtum.create.content.decoration.copycat.CopycatModel;
 import dev.architectury.injectables.annotations.ExpectPlatform;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.core.BlockPos;

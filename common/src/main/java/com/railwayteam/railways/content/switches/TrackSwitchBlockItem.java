@@ -18,9 +18,9 @@
 
 package com.railwayteam.railways.content.switches;
 
-import com.simibubi.create.content.trains.graph.EdgePointType;
-import com.simibubi.create.content.trains.track.TrackBlockOutline;
-import com.simibubi.create.content.trains.track.TrackTargetingBlockItem;
+import com.zurrtum.create.content.trains.graph.EdgePointType;
+import com.zurrtum.create.content.trains.track.TrackBlockOutline;
+import com.zurrtum.create.content.trains.track.TrackTargetingBlockItem;
 import com.tterrag.registrate.util.nullness.NonNullBiFunction;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;

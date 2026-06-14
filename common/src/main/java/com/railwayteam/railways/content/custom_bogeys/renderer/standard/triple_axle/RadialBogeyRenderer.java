@@ -21,9 +21,9 @@ package com.railwayteam.railways.content.custom_bogeys.renderer.standard.triple_
 import com.jozufozu.flywheel.api.MaterialManager;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.simibubi.create.content.trains.bogey.BogeyRenderer;
-import com.simibubi.create.content.trains.bogey.BogeySizes;
-import com.simibubi.create.content.trains.entity.CarriageBogey;
+import com.zurrtum.create.content.trains.bogey.BogeyRenderer;
+import com.zurrtum.create.content.trains.bogey.BogeySizes;
+import com.zurrtum.create.content.trains.entity.CarriageBogey;
 import net.minecraft.nbt.CompoundTag;
 
 import static com.railwayteam.railways.registry.CRBlockPartials.CR_BOGEY_WHEELS;

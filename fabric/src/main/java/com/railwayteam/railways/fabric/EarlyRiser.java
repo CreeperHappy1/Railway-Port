@@ -20,7 +20,7 @@ package com.railwayteam.railways.fabric;
 
 import com.chocohead.mm.api.ClassTinkerers;
 import com.railwayteam.railways.registry.CRIcons;
-import com.simibubi.create.foundation.gui.AllIcons;
+import com.zurrtum.create.foundation.gui.AllIcons;
 
 import java.util.function.Supplier;
 

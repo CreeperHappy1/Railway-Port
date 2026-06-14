@@ -19,7 +19,7 @@
 package com.railwayteam.railways.base.data;
 
 import com.railwayteam.railways.registry.CREntities;
-import com.simibubi.create.api.data.TrainHatInfoProvider;
+import com.zurrtum.create.api.data.TrainHatInfoProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.phys.Vec3;
 

@@ -1,7 +1,7 @@
 package com.railwayteam.railways.registry.forge;
 
 import com.railwayteam.railways.registry.CRCreativeModeTabs;
-import com.simibubi.create.foundation.data.CreateRegistrate;
+import com.zurrtum.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.RegistryEntry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTab;

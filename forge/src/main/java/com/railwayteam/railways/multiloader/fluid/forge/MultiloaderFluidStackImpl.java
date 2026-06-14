@@ -21,7 +21,7 @@ package com.railwayteam.railways.multiloader.fluid.forge;
 import com.mojang.serialization.Codec;
 import com.railwayteam.railways.annotation.multiloader.ImplClass;
 import com.railwayteam.railways.multiloader.fluid.MultiloaderFluidStack;
-import com.simibubi.create.foundation.fluid.FluidIngredient;
+import com.zurrtum.create.foundation.fluid.FluidIngredient;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;

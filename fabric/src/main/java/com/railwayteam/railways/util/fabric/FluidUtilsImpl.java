@@ -20,8 +20,8 @@ package com.railwayteam.railways.util.fabric;
 
 import com.railwayteam.railways.annotation.multiloader.ImplClass;
 import com.railwayteam.railways.content.fuel.tank.FuelTankBlockEntity;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
+import com.zurrtum.create.content.processing.recipe.ProcessingRecipe;
+import com.zurrtum.create.content.processing.recipe.ProcessingRecipeBuilder;
 import io.github.fabricators_of_create.porting_lib.fluids.FluidStack;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
 import net.minecraft.nbt.CompoundTag;

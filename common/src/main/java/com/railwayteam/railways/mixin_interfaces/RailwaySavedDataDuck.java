@@ -18,7 +18,7 @@
 
 package com.railwayteam.railways.mixin_interfaces;
 
-import com.simibubi.create.content.trains.entity.Train;
+import com.zurrtum.create.content.trains.entity.Train;
 import net.minecraft.resources.ResourceLocation;
 
 import java.util.Map;

@@ -25,7 +25,7 @@ import com.railwayteam.railways.config.CRConfigs;
 import com.railwayteam.railways.events.ClientEvents;
 import com.railwayteam.railways.multiloader.S2CPacket;
 import com.railwayteam.railways.registry.CRPackets;
-import com.simibubi.create.foundation.utility.Components;
+import com.zurrtum.create.foundation.utility.Components;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.ChatFormatting;

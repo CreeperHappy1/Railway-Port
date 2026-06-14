@@ -18,8 +18,8 @@
 
 package com.railwayteam.railways.content.fuel.tank;
 
-import com.simibubi.create.foundation.data.AssetLookup;
-import com.simibubi.create.foundation.data.SpecialBlockStateGen;
+import com.zurrtum.create.foundation.data.AssetLookup;
+import com.zurrtum.create.foundation.data.SpecialBlockStateGen;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;

@@ -18,7 +18,7 @@
 
 package com.railwayteam.railways.content.palettes;
 
-import com.simibubi.create.content.decoration.MetalLadderBlock;
+import com.zurrtum.create.content.decoration.MetalLadderBlock;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelReader;

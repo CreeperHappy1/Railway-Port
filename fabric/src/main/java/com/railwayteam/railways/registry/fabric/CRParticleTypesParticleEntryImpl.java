@@ -20,7 +20,7 @@ package com.railwayteam.railways.registry.fabric;
 
 import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.registry.CRParticleTypes;
-import com.simibubi.create.foundation.particle.ICustomParticleData;
+import com.zurrtum.create.foundation.particle.ICustomParticleData;
 import io.github.fabricators_of_create.porting_lib.util.LazyRegistrar;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

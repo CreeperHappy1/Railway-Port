@@ -20,8 +20,8 @@ package com.railwayteam.railways.util.forge;
 
 import com.railwayteam.railways.annotation.multiloader.ImplClass;
 import com.railwayteam.railways.content.fuel.tank.FuelTankBlockEntity;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipe;
-import com.simibubi.create.content.processing.recipe.ProcessingRecipeBuilder;
+import com.zurrtum.create.content.processing.recipe.ProcessingRecipe;
+import com.zurrtum.create.content.processing.recipe.ProcessingRecipeBuilder;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.material.Fluid;

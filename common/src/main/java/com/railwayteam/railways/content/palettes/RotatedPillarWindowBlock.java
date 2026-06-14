@@ -18,8 +18,8 @@
 
 package com.railwayteam.railways.content.palettes;
 
-import com.simibubi.create.content.decoration.palettes.ConnectedGlassBlock;
-import com.simibubi.create.content.decoration.palettes.WindowBlock;
+import com.zurrtum.create.content.decoration.palettes.ConnectedGlassBlock;
+import com.zurrtum.create.content.decoration.palettes.WindowBlock;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.MethodsReturnNonnullByDefault;

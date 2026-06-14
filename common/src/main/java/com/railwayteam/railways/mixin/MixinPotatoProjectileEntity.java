@@ -19,7 +19,7 @@
 package com.railwayteam.railways.mixin;
 
 import com.railwayteam.railways.content.palettes.painting.PaintPitcherItem;
-import com.simibubi.create.content.equipment.potatoCannon.PotatoProjectileEntity;
+import com.zurrtum.create.content.equipment.potatoCannon.PotatoProjectileEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.projectile.AbstractHurtingProjectile;
 import net.minecraft.world.item.ItemStack;

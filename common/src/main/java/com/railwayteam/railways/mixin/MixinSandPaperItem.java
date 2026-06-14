@@ -20,8 +20,8 @@ package com.railwayteam.railways.mixin;
 
 import com.railwayteam.railways.content.palettes.PalettesColor;
 import com.railwayteam.railways.content.palettes.painting.RepaintingTarget;
-import com.simibubi.create.AllSoundEvents;
-import com.simibubi.create.content.equipment.sandPaper.SandPaperItem;
+import com.zurrtum.create.AllSoundEvents;
+import com.zurrtum.create.content.equipment.sandPaper.SandPaperItem;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;

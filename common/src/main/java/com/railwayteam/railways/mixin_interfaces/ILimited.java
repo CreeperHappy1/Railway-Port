@@ -18,7 +18,7 @@
 
 package com.railwayteam.railways.mixin_interfaces;
 
-import com.simibubi.create.content.trains.station.StationEditPacket;
+import com.zurrtum.create.content.trains.station.StationEditPacket;
 import net.minecraft.core.BlockPos;
 
 public interface ILimited {

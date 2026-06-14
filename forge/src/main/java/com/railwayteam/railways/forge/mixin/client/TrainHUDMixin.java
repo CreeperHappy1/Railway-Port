@@ -20,7 +20,7 @@ package com.railwayteam.railways.forge.mixin.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.railwayteam.railways.content.switches.TrainHUDSwitchExtension;
-import com.simibubi.create.content.trains.TrainHUD;
+import com.zurrtum.create.content.trains.TrainHUD;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraftforge.client.gui.overlay.ForgeGui;
 import org.spongepowered.asm.mixin.Mixin;

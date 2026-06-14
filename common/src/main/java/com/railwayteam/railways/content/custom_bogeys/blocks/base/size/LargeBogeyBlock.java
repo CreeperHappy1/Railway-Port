@@ -19,8 +19,8 @@
 package com.railwayteam.railways.content.custom_bogeys.blocks.base.size;
 
 import com.railwayteam.railways.content.custom_bogeys.blocks.base.CRBogeyBlock;
-import com.simibubi.create.content.trains.bogey.BogeySizes;
-import com.simibubi.create.content.trains.bogey.BogeyStyle;
+import com.zurrtum.create.content.trains.bogey.BogeySizes;
+import com.zurrtum.create.content.trains.bogey.BogeyStyle;
 
 public class LargeBogeyBlock extends CRBogeyBlock {
     protected LargeBogeyBlock(Properties props, BogeyStyle defaultStyle, BogeySizes.BogeySize size) {

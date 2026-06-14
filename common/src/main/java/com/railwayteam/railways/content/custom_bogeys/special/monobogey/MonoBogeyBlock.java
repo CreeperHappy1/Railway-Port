@@ -20,7 +20,7 @@ package com.railwayteam.railways.content.custom_bogeys.special.monobogey;
 
 import com.railwayteam.railways.registry.CRBlockEntities;
 import com.railwayteam.railways.registry.CRBogeyStyles;
-import com.simibubi.create.content.trains.bogey.BogeyStyle;
+import com.zurrtum.create.content.trains.bogey.BogeyStyle;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 

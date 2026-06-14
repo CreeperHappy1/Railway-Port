@@ -18,7 +18,7 @@
 
 package com.railwayteam.railways.util;
 
-import com.simibubi.create.AllBlocks;
+import com.zurrtum.create.AllBlocks;
 import com.tterrag.registrate.util.entry.BlockEntry;
 
 //So that mixin doesn't load all blocks

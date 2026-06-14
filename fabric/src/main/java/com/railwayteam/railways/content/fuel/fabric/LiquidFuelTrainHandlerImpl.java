@@ -19,7 +19,7 @@
 package com.railwayteam.railways.content.fuel.fabric;
 
 import com.railwayteam.railways.content.fuel.LiquidFuelTrainHandler;
-import com.simibubi.create.foundation.fluid.CombinedTankWrapper;
+import com.zurrtum.create.foundation.fluid.CombinedTankWrapper;
 import io.github.fabricators_of_create.porting_lib.transfer.TransferUtil;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
 import net.fabricmc.fabric.api.transfer.v1.storage.StorageView;

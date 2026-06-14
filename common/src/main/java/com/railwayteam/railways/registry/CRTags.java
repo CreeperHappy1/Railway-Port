@@ -20,7 +20,7 @@ package com.railwayteam.railways.registry;
 
 import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.util.TextUtils;
-import com.simibubi.create.foundation.utility.Lang;
+import com.zurrtum.create.foundation.utility.Lang;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;

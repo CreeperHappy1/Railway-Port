@@ -19,8 +19,8 @@
 package com.railwayteam.railways.content.palettes.ct;
 
 import com.railwayteam.railways.content.palettes.boiler.BoilerBlock;
-import com.simibubi.create.foundation.block.connected.CTSpriteShiftEntry;
-import com.simibubi.create.foundation.block.connected.ConnectedTextureBehaviour;
+import com.zurrtum.create.foundation.block.connected.CTSpriteShiftEntry;
+import com.zurrtum.create.foundation.block.connected.ConnectedTextureBehaviour;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

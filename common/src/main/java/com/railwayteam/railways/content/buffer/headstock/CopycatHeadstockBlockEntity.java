@@ -20,7 +20,7 @@ package com.railwayteam.railways.content.buffer.headstock;
 
 import com.railwayteam.railways.content.buffer.IDyedBuffer;
 import com.railwayteam.railways.util.BlockStateUtils;
-import com.simibubi.create.content.decoration.copycat.CopycatBlockEntity;
+import com.zurrtum.create.content.decoration.copycat.CopycatBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.InteractionResult;

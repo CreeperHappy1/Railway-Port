@@ -21,7 +21,7 @@ package com.railwayteam.railways.content.cycle_menu;
 import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.annotation.multiloader.MultiLoaderEvent;
 import com.railwayteam.railways.registry.CRPalettes;
-import com.simibubi.create.foundation.utility.Components;
+import com.zurrtum.create.foundation.utility.Components;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.InteractionHand;

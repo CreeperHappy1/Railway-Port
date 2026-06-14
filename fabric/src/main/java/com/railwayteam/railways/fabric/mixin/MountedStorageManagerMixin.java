@@ -20,9 +20,9 @@ package com.railwayteam.railways.fabric.mixin;
 
 import com.railwayteam.railways.content.fuel.tank.FuelTankBlockEntity;
 import com.railwayteam.railways.mixin_interfaces.IFuelInventory;
-import com.simibubi.create.content.contraptions.MountedFluidStorage;
-import com.simibubi.create.content.contraptions.MountedStorageManager;
-import com.simibubi.create.foundation.fluid.CombinedTankWrapper;
+import com.zurrtum.create.content.contraptions.MountedFluidStorage;
+import com.zurrtum.create.content.contraptions.MountedStorageManager;
+import com.zurrtum.create.foundation.fluid.CombinedTankWrapper;
 import io.github.fabricators_of_create.porting_lib.fluids.FluidStack;
 import io.github.fabricators_of_create.porting_lib.transfer.TransferUtil;
 import io.github.fabricators_of_create.porting_lib.transfer.fluid.FluidTank;

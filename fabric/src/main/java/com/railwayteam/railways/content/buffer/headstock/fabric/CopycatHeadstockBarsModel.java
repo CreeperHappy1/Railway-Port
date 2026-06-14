@@ -18,8 +18,8 @@
 
 package com.railwayteam.railways.content.buffer.headstock.fabric;
 
-import com.simibubi.create.content.decoration.copycat.CopycatModel;
-import com.simibubi.create.foundation.block.render.SpriteShiftEntry;
+import com.zurrtum.create.content.decoration.copycat.CopycatModel;
+import com.zurrtum.create.foundation.block.render.SpriteShiftEntry;
 import net.fabricmc.fabric.api.renderer.v1.model.FabricBakedModel;
 import net.fabricmc.fabric.api.renderer.v1.model.SpriteFinder;
 import net.fabricmc.fabric.api.renderer.v1.render.RenderContext;

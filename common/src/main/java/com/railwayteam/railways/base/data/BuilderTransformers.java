@@ -56,13 +56,13 @@ import com.railwayteam.railways.registry.CRPalettes.WindowType;
 import com.railwayteam.railways.registry.CRPalettes.Wrapping;
 import com.railwayteam.railways.registry.CRTags;
 import com.railwayteam.railways.util.FusedSupplier;
-import com.simibubi.create.AllBlocks;
-import com.simibubi.create.AllTags;
-import com.simibubi.create.content.contraptions.behaviour.DoorMovingInteraction;
-import com.simibubi.create.content.decoration.MetalLadderBlock;
-import com.simibubi.create.content.kinetics.flywheel.FlywheelBlock;
-import com.simibubi.create.foundation.data.SharedProperties;
-import com.simibubi.create.foundation.item.ItemDescription;
+import com.zurrtum.create.AllBlocks;
+import com.zurrtum.create.AllTags;
+import com.zurrtum.create.content.contraptions.behaviour.DoorMovingInteraction;
+import com.zurrtum.create.content.decoration.MetalLadderBlock;
+import com.zurrtum.create.content.kinetics.flywheel.FlywheelBlock;
+import com.zurrtum.create.foundation.data.SharedProperties;
+import com.zurrtum.create.foundation.item.ItemDescription;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.builders.ItemBuilder;
 import com.tterrag.registrate.providers.DataGenContext;
@@ -100,8 +100,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Function;
 
-import static com.simibubi.create.AllInteractionBehaviours.interactionBehaviour;
-import static com.simibubi.create.foundation.data.TagGen.pickaxeOnly;
+import static com.zurrtum.create.AllInteractionBehaviours.interactionBehaviour;
+import static com.zurrtum.create.foundation.data.TagGen.pickaxeOnly;
 
 public class BuilderTransformers {
     @ExpectPlatform

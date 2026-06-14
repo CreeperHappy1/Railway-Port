@@ -19,7 +19,7 @@
 package com.railwayteam.railways.mixin;
 
 import com.railwayteam.railways.mixin_interfaces.ICarriageFlywheel;
-import com.simibubi.create.content.kinetics.flywheel.FlywheelBlockEntity;
+import com.zurrtum.create.content.kinetics.flywheel.FlywheelBlockEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 

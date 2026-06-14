@@ -20,7 +20,7 @@ package com.railwayteam.railways.config;
 
 import com.railwayteam.railways.content.smokestack.SmokeType;
 import com.railwayteam.railways.content.smokestack.particles.legacy.SmokeParticle.SmokeQuality;
-import com.simibubi.create.foundation.config.ConfigBase;
+import com.zurrtum.create.foundation.config.ConfigBase;
 
 @SuppressWarnings("unused")
 public class CClient extends ConfigBase {

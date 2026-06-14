@@ -18,7 +18,7 @@
 
 package com.railwayteam.railways.api.bogeymenu.v0.entry;
 
-import com.simibubi.create.content.trains.bogey.BogeyStyle;
+import com.zurrtum.create.content.trains.bogey.BogeyStyle;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

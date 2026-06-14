@@ -19,7 +19,7 @@
 package com.railwayteam.railways.registry;
 
 import com.railwayteam.railways.Railways;
-import com.simibubi.create.content.equipment.potatoCannon.PotatoCannonProjectileType;
+import com.zurrtum.create.content.equipment.potatoCannon.PotatoCannonProjectileType;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
