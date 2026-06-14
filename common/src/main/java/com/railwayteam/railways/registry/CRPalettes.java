@@ -38,14 +38,18 @@ import com.railwayteam.railways.content.palettes.smokebox.PalettesSmokeboxBlock;
 import com.railwayteam.railways.content.palettes.trapdoors.PalettesTrapDoorBlock;
 import com.railwayteam.railways.util.BlockStateUtils;
 import com.railwayteam.railways.util.TextUtils;
-import com.zurrtum.create.AllTags;
+import com.zurrtum.create.AllInteractionBehaviours;
+import com.zurrtum.create.AllItemTags;
+import com.zurrtum.create.AllFluidTags;
+import com.zurrtum.create.AllBlockTags;
+import com.zurrtum.create.AllEntityTags;
 import com.zurrtum.create.content.contraptions.behaviour.TrapdoorMovingInteraction;
 import com.zurrtum.create.content.decoration.MetalLadderBlock;
 import com.zurrtum.create.content.decoration.slidingDoor.SlidingDoorMovementBehaviour;
 import com.zurrtum.create.content.kinetics.flywheel.FlywheelBlock;
-import com.zurrtum.create.foundation.block.connected.SimpleCTBehaviour;
+import com.zurrtum.create.client.foundation.block.connected.SimpleCTBehaviour;
 import com.zurrtum.create.foundation.data.CreateRegistrate;
-import com.zurrtum.create.foundation.item.ItemDescription;
+import com.zurrtum.create.client.foundation.item.ItemDescription;
 import com.zurrtum.create.foundation.utility.Pair;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.providers.ProviderType;
@@ -77,8 +81,9 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 import static com.railwayteam.railways.util.TextUtils.*;
-import static com.zurrtum.create.AllInteractionBehaviours.interactionBehaviour;
-import static com.zurrtum.create.AllMovementBehaviours.movementBehaviour;
+import static com.zurrtum.create.AllInteractionBehaviours.TRAPDOOR;
+import static com.zurrtum.create.AllMovementBehaviours.movementBehaviour;//TODO import "new FlywheelMovementBehaviour()"
+import static com.zurrtum.create.AllMovementBehaviours.SLIDING_DOOR;
 import static com.zurrtum.create.foundation.data.CreateRegistrate.connectedTextures;
 import static com.zurrtum.create.foundation.data.ModelGen.customItemModel;
 
@@ -556,7 +561,7 @@ public class CRPalettes {
             .transform(transformer.get())
             .transform(BuilderTransformers.locometalDoor(color, "sliding", slidingTags, NO_DOUBLE_DOOR_TAGS))
             .transform(BuilderTransformers.locometalSlidingDoorBlockState(color, "sliding"))
-            .onRegister(movementBehaviour(new SlidingDoorMovementBehaviour()))
+            .onRegister(SLIDING_DOOR)
             .lang(joinSpace(colorName, "Sliding Locometal Door"))
             .register();
     }
@@ -569,7 +574,7 @@ public class CRPalettes {
             .transform(transformer.get())
             .transform(BuilderTransformers.locometalDoor(color, "folding", foldingTags, NO_DOUBLE_DOOR_TAGS))
             .transform(BuilderTransformers.locometalFoldingDoorBlockState(color, "folding"))
-            .onRegister(movementBehaviour(new SlidingDoorMovementBehaviour()))
+            .onRegister(SLIDING_DOOR)
             .lang(joinSpace(colorName, "Folding Locometal Door"))
             .register();
     }
@@ -624,7 +629,7 @@ public class CRPalettes {
             .properties(BlockBehaviour.Properties::noOcclusion)
             .addLayer(() -> RenderType::cutoutMipped)
             .tag(BlockTags.TRAPDOORS)
-            .onRegister(interactionBehaviour(new TrapdoorMovingInteraction()))
+            .onRegister(TRAPDOOR)
             .item()
             .transform(BuilderTransformers.locoMetalItem(color))
             .tag(trapdoorTags)

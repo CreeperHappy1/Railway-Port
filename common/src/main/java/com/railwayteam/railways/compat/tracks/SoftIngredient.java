@@ -29,7 +29,7 @@ import java.util.stream.Stream;
 /**
  * Represents a special ingredient for datagen - it references an item that does not necessarily exist
  */
-public class SoftIngredient extends Ingredient {
+public class SoftIngredient extends Ingredient {//TODO refactor or substitute use case
     public final ResourceLocation item;
     public SoftIngredient(ResourceLocation item) {
         super(Stream.empty());

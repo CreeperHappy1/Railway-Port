@@ -21,7 +21,7 @@ package com.railwayteam.railways.registry;
 import com.railwayteam.railways.content.custom_tracks.monorail.MonorailTrackVoxelShapes;
 import com.zurrtum.create.AllShapes;
 import com.zurrtum.create.AllShapes.Builder;
-import com.zurrtum.create.foundation.utility.VoxelShaper;
+import com.zurrtum.create.catnip.math.VoxelShaper;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.shapes.BooleanOp;

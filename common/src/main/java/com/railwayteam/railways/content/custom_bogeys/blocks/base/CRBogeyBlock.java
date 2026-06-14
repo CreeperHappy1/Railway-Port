@@ -21,9 +21,9 @@ package com.railwayteam.railways.content.custom_bogeys.blocks.base;
 import com.railwayteam.railways.content.custom_bogeys.blocks.base.be.CRBogeyBlockEntity;
 import com.railwayteam.railways.registry.CRBlockEntities;
 import com.zurrtum.create.AllBlocks;
-import com.zurrtum.create.content.schematics.requirement.ISpecialBlockItemRequirement;
+import com.zurrtum.create.api.schematic.requirement.SpecialBlockItemRequirement;
 import com.zurrtum.create.content.trains.bogey.AbstractBogeyBlock;
-import com.zurrtum.create.content.trains.bogey.BogeySizes.BogeySize;
+import com.zurrtum.create.content.trains.bogey.BogeySize;
 import com.zurrtum.create.content.trains.bogey.BogeyStyle;
 import com.zurrtum.create.content.trains.track.TrackMaterial;
 import com.zurrtum.create.foundation.block.IBE;
@@ -37,7 +37,7 @@ import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 
 public class CRBogeyBlock extends AbstractBogeyBlock<CRBogeyBlockEntity>
-	implements IBE<CRBogeyBlockEntity>, ProperWaterloggedBlock, ISpecialBlockItemRequirement {
+	implements IBE<CRBogeyBlockEntity>, ProperWaterloggedBlock, SpecialBlockItemRequirement {
 
 	private final BogeyStyle defaultStyle;
 
