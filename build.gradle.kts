@@ -208,7 +208,7 @@ subprojects {
     }
 
     dependencies {
-        common(project(":common", "namedElements")) { isTransitive = false }
+        //common(project(":common", "namedElements")) { isTransitive = false } //NOTE: idk what this did but it errors
         shadowCommon(project(":common", "transformProduction${capitalizedName}")) { isTransitive = false }
     }
 

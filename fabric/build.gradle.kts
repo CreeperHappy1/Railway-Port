@@ -38,69 +38,70 @@ loom {
 }
 
 dependencies {
-    modImplementation("net.fabricmc:fabric-loader:${"fabric_loader_version"()}")
-    modImplementation("net.fabricmc.fabric-api:fabric-api:${"fabric_api_version"()}")
+    implementation("net.fabricmc:fabric-loader:${"fabric_loader_version"()}")
+    implementation("net.fabricmc.fabric-api:fabric-api:${"fabric_api_version"()}")
 
     // Create - dependencies are added transitively
-    modImplementation("com.simibubi.create:create-fabric-${"minecraft_version"()}:${"create_fabric_version"()}")
+    //implementation("com.simibubi.create:create-fabric-${"minecraft_version"()}:${"create_fabric_version"()}")
+    implementation("maven.modrinth:create-fly:${"minecraft_version"()}-${"create_fly_version"()}")
 
     // Fabric ASM (enum extension etc)
-    modImplementation("com.github.Chocohead:Fabric-ASM:v2.3") {
+    implementation("com.github.Chocohead:Fabric-ASM:v2.3") {
         exclude (group = "net.fabricmc.fabric-api")
     }
 
     include("com.github.Chocohead:Fabric-ASM:v2.3")
 
     // Development QOL
-    modLocalRuntime("maven.modrinth:lazydfu:${"lazydfu_version"()}")
-    modLocalRuntime("com.terraformersmc:modmenu:${"modmenu_version"()}")
+    localRuntime("maven.modrinth:lazydfu:${"lazydfu_version"()}")
+    localRuntime("com.terraformersmc:modmenu:${"modmenu_version"()}")
 
-    modCompileOnly("dev.emi:emi-fabric:${"emi_version"()}:api") { isTransitive = false }
-    modLocalRuntime("dev.emi:emi-fabric:${"emi_version"()}")
+    // compileOnly("dev.emi:emi-fabric:${"emi_version"()}:api") { isTransitive = false }
+    // localRuntime("dev.emi:emi-fabric:${"emi_version"()}")
 
-    modLocalRuntime("maven.modrinth:journeymap:${"journeymap_version"()}-fabric") // Test with JourneyMap in dev
-    modLocalRuntime("info.journeymap:journeymap-api:${"journeymap_api_version"()}-fabric-SNAPSHOT") // API is a JiJ on fabric, add manually
+    localRuntime("maven.modrinth:journeymap:${"journeymap_version"()}-fabric") // Test with JourneyMap in dev
+    localRuntime("info.journeymap:journeymap-api:${"journeymap_api_version"()}-fabric-SNAPSHOT") // API is a JiJ on fabric, add manually
 
-    modCompileOnly("info.journeymap:journeymap-api:${"journeymap_api_version"()}-fabric-SNAPSHOT") // for some reason this is needed explicitly
+    compileOnly("info.journeymap:journeymap-api:${"journeymap_api_version"()}-fabric-SNAPSHOT") // for some reason this is needed explicitly
 
-    modCompileOnly("de.maxhenkel.voicechat:voicechat-api:${"voicechat_api_version"()}")
+    compileOnly("de.maxhenkel.voicechat:voicechat-api:${"voicechat_api_version"()}")
 
     if ("enable_simple_voice_chat"().toBoolean()) {
-        modLocalRuntime("maven.modrinth:simple-voice-chat:fabric-${"voicechat_version"()}")
+        localRuntime("maven.modrinth:simple-voice-chat:fabric-${"voicechat_version"()}")
     }
 
     // mod compat for tracks
     if ("enable_hexcasting"().toBoolean()) {
-        modLocalRuntime("at.petra-k.paucal:paucal-fabric-${"minecraft_version"()}:${"paucal_version"()}")
-        modLocalRuntime("at.petra-k.hexcasting:hexcasting-fabric-${"minecraft_version"()}:${"hexcasting_version"()}")
-        modLocalRuntime("vazkii.patchouli:Patchouli:${"minecraft_version"()}-${"patchouli_version"()}-FABRIC")
+        localRuntime("at.petra-k.paucal:paucal-fabric-${"minecraft_version"()}:${"paucal_version"()}")
+        localRuntime("at.petra-k.hexcasting:hexcasting-fabric-${"minecraft_version"()}:${"hexcasting_version"()}")
+        localRuntime("vazkii.patchouli:Patchouli:${"minecraft_version"()}-${"patchouli_version"()}-FABRIC")
     }
 
     if ("enable_byg"().toBoolean()) {
-        modLocalRuntime("maven.modrinth:biomesyougo:${"byg_version"()}-fabric")
-        modLocalRuntime("maven.modrinth:terrablender:${"terrablender_version_fabric"()}")
-        modLocalRuntime("maven.modrinth:geckolib:${"geckolib_version_fabric"()}")
-        modLocalRuntime("maven.modrinth:corgilib:${"corgilib_version_fabric"()}")
+        localRuntime("maven.modrinth:biomesyougo:${"byg_version"()}-fabric")
+        localRuntime("maven.modrinth:terrablender:${"terrablender_version_fabric"()}")
+        localRuntime("maven.modrinth:geckolib:${"geckolib_version_fabric"()}")
+        localRuntime("maven.modrinth:corgilib:${"corgilib_version_fabric"()}")
     }
 
     if ("enable_natures_spirit"().toBoolean()) {
-        modLocalRuntime("maven.modrinth:natures-spirit:${"natures_spirit_version"()}")
+        localRuntime("maven.modrinth:natures-spirit:${"natures_spirit_version"()}")
     }
 
     if ("enable_tweakeroo"().toBoolean()) {
-        modLocalRuntime("curse.maven:tweakeroo-297344:${"tweakeroo_version"()}")
-        modLocalRuntime("curse.maven:malilib-303119:${"malilib_version"()}")
+        localRuntime("curse.maven:tweakeroo-297344:${"tweakeroo_version"()}")
+        localRuntime("curse.maven:malilib-303119:${"malilib_version"()}")
     }
 
     if ("enable_sodium_rubidium"().toBoolean()) {
-        modLocalRuntime("maven.modrinth:sodium:${"sodium_version"()}")
-        modLocalRuntime("org.joml:joml:1.10.2")
-        modLocalRuntime("maven.modrinth:indium:${"indium_version"()}")
+        localRuntime("maven.modrinth:sodium:${"sodium_version"()}")
+        localRuntime("org.joml:joml:1.10.2")
+        localRuntime("maven.modrinth:indium:${"indium_version"()}")
     }
     if ("enable_iris"().toBoolean()) {
-        modLocalRuntime("maven.modrinth:iris:${"iris_version"()}")
-        modLocalRuntime("org.anarres:jcpp:1.4.14")
-        modLocalRuntime("io.github.douira:glsl-transformer:2.0.0-pre13")
+        localRuntime("maven.modrinth:iris:${"iris_version"()}")
+        localRuntime("org.anarres:jcpp:1.4.14")
+        localRuntime("io.github.douira:glsl-transformer:2.0.0-pre13")
     }
 
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:${"mixin_extras_version"()}")!!)!!
