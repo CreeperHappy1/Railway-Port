@@ -33,22 +33,22 @@ architectury {
 dependencies {
     // We depend on fabric loader here to use the fabric @Environment annotations and get the mixin dependencies
     // Do NOT use other classes from fabric loader
-    modImplementation("net.fabricmc:fabric-loader:${"fabric_loader_version"()}")
+    implementation("net.fabricmc:fabric-loader:${"fabric_loader_version"()}")
     // Compile against Create Fabric in common
     // beware of differences across platforms!
     // dependencies must also be pulled in to minimize problems, from remapping issues to compile errors.
     // All dependencies except Flywheel and Registrate are NOT safe to use!
     // Flywheel and Registrate must also be used carefully due to differences.
-    modCompileOnly("com.simibubi.create:create-fabric-${"minecraft_version"()}:${"create_fabric_version"()}")
+    compileOnly("com.simibubi.create:create-fabric-${"minecraft_version"()}:${"create_fabric_version"()}")
 
     // required for proper remapping and compiling
-    modCompileOnly("net.fabricmc.fabric-api:fabric-api:${"fabric_api_version"()}")
+    compileOnly("net.fabricmc.fabric-api:fabric-api:${"fabric_api_version"()}")
 
     // JourneyMap compat
-    modCompileOnly("info.journeymap:journeymap-api:${"journeymap_api_version"()}-fabric-SNAPSHOT")
+    compileOnly("info.journeymap:journeymap-api:${"journeymap_api_version"()}-fabric-SNAPSHOT")
 
-    modCompileOnly("de.maxhenkel.voicechat:voicechat-api:${"voicechat_api_version"()}")
-    modCompileOnly("maven.modrinth:simple-voice-chat:fabric-${"voicechat_version"()}")
+    compileOnly("de.maxhenkel.voicechat:voicechat-api:${"voicechat_api_version"()}")
+    compileOnly("maven.modrinth:simple-voice-chat:fabric-${"voicechat_version"()}")
 
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:${"mixin_extras_version"()}")!!)
 }
