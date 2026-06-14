@@ -39,7 +39,8 @@ dependencies {
     // dependencies must also be pulled in to minimize problems, from remapping issues to compile errors.
     // All dependencies except Flywheel and Registrate are NOT safe to use!
     // Flywheel and Registrate must also be used carefully due to differences.
-    compileOnly("com.simibubi.create:create-fabric-${"minecraft_version"()}:${"create_fabric_version"()}")
+    //compileOnly("com.simibubi.create:create-fabric-${"minecraft_version"()}:${"create_fabric_version"()}")
+    implementation("maven.modrinth:create-fly:${"minecraft_version"()}-6.0.9-3")
 
     // required for proper remapping and compiling
     compileOnly("net.fabricmc.fabric-api:fabric-api:${"fabric_api_version"()}")

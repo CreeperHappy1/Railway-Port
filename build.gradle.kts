@@ -426,7 +426,7 @@ fun Project.setupRepositories() {
         exclusiveMaven("https://maven.parchmentmc.org", "org.parchmentmc.data") // Parchment mappings
         exclusiveMaven("https://maven.quiltmc.org/repository/release", "org.quiltmc") // Quilt Mappings
         maven("https://jm.gserv.me/repository/maven-public/") // JourneyMap API
-        exclusiveMaven("https://api.modrinth.com/maven", "maven.modrinth") // LazyDFU, JourneyMap
+        exclusiveMaven("https://api.modrinth.com/maven", "maven.modrinth") // LazyDFU, JourneyMap, Create fly
         exclusiveMaven("https://cursemaven.com", "curse.maven")
         maven("https://maven.theillusivec4.top/") // Curios
         maven("https://maven.tterrag.com/") { // Flywheel, Registrate, Create
@@ -440,7 +440,7 @@ fun Project.setupRepositories() {
         maven("https://maven.jamieswhiteshirt.com/libs-release") // Reach Entity Attributes
         exclusiveMaven("https://thedarkcolour.github.io/KotlinForForge/", "thedarkcolour") // KFF (Hex Casting dependency)
         maven("https://maven.terraformersmc.com/releases/") // Mod Menu, EMI
-        maven("https://mvn.devos.one/snapshots/") // Create Fabric, Porting Lib, Forge Tags, Milk Lib, Registrate Fabric
+        maven("https://mvn.devos.one/snapshots/") // Porting Lib, Forge Tags, Milk Lib, Registrate Fabric
         maven("https://mvn.devos.one/releases/") // Porting Lib
         maven("https://maven.cafeteria.dev/releases") // Fake Player API
         maven("https://raw.githubusercontent.com/Fuzss/modresources/main/maven/") // forge config api port
