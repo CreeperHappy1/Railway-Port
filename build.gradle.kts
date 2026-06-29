@@ -17,7 +17,6 @@
  */
 
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
-import dev.architectury.plugin.ArchitectPluginExtension
 import groovy.json.JsonOutput
 import groovy.json.JsonSlurper
 import me.modmuss50.mpp.ModPublishExtension
@@ -41,8 +40,7 @@ import me.modmuss50.mpp.ReleaseType
 plugins {
     java
     `maven-publish`
-    id("architectury-plugin") version "3.5-SNAPSHOT"
-    id("dev.architectury.loom-no-remap") version "1.14.+" apply false
+    id("net.fabricmc.fabric-loom") version "1.14.+" apply false
     id("me.modmuss50.mod-publish-plugin") version "0.7.4" apply false // https://github.com/modmuss50/mod-publish-plugin
     id("com.github.johnrengelman.shadow") version "8.1.1" apply false
     id("dev.ithundxr.silk") version "0.11.15" // https://github.com/IThundxr/silk
@@ -70,14 +68,14 @@ if (includeDevCommands) {
 
 extra["gitHash"] = gitHash
 extra["includeDevCommands"] = includeDevCommands
-
-architectury {
-    minecraft = "minecraft_version"()
-}
+//
+//architectury {
+//    minecraft = "minecraft_version"()
+//}
 
 allprojects {
     apply(plugin = "java")
-    apply(plugin = "architectury-plugin")
+//    apply(plugin = "architectury-plugin")
     apply(plugin = "maven-publish")
 
     java {
@@ -111,24 +109,24 @@ allprojects {
 }
 
 subprojects {
-    apply(plugin = "dev.architectury.loom-no-remap")
+    apply(plugin = "net.fabricmc.fabric-loom")
     apply(plugin = "net.kyori.blossom")
 
     setupRepositories()
 
     val capitalizedName = project.name.replaceFirstChar { it.uppercase() }
 
-    val loom = project.extensions.getByType<LoomGradleExtensionAPI>()
-    loom.apply {
-        silentMojangMappingsLicense()
-        runs.configureEach {
-            vmArg("-XX:+AllowEnhancedClassRedefinition")
-            vmArg("-XX:+IgnoreUnrecognizedVMOptions")
-            vmArg("-Dmixin.debug.export=true")
-            vmArg("-Dmixin.env.remapRefMap=true")
-            vmArg("-Dmixin.env.refMapRemappingFile=${projectDir}/build/createSrgToMcp/output.srg")
-        }
-    }
+//    val loom = project.extensions.getByType<LoomGradleExtensionAPI>()
+//    loom.apply {
+//        silentMojangMappingsLicense()
+//        runs.configureEach {
+//            vmArg("-XX:+AllowEnhancedClassRedefinition")
+//            vmArg("-XX:+IgnoreUnrecognizedVMOptions")
+//            vmArg("-Dmixin.debug.export=true")
+//            vmArg("-Dmixin.env.remapRefMap=true")
+//            vmArg("-Dmixin.env.refMapRemappingFile=${projectDir}/build/createSrgToMcp/output.srg")
+//        }
+//    }
 
     configurations.configureEach {
         resolutionStrategy {
@@ -181,9 +179,9 @@ subprojects {
     apply(plugin = "com.github.johnrengelman.shadow")
     apply(plugin = "me.modmuss50.mod-publish-plugin")
 
-    architectury {
-        platformSetupLoomIde()
-    }
+//    architectury {
+//        platformSetupLoomIde()
+//    }
 
     // val remapJar = tasks.named<RemapJarTask>("remapJar") {
     //     from("${rootProject.projectDir}/LICENSE")
@@ -487,9 +485,9 @@ fun hasUnstaged(): Boolean {
     }
 }
 
-fun Project.architectury(action: Action<ArchitectPluginExtension>) {
-    action.execute(this.extensions.getByType<ArchitectPluginExtension>())
-}
+//fun Project.architectury(action: Action<ArchitectPluginExtension>) {
+//    action.execute(this.extensions.getByType<ArchitectPluginExtension>())
+//}
 
 fun RepositoryHandler.exclusiveMaven(url: String, vararg groups: String) {
     exclusiveContent {

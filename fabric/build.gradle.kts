@@ -16,7 +16,7 @@
  * along with this program. If not, see <https://www.gnu.org/licenses/>.
  */
 
-architectury.fabric()
+//architectury.fabric()
 
 loom {
     val common = project(":common")

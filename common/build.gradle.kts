@@ -20,15 +20,15 @@ loom {
     accessWidenerPath = file("src/main/resources/railways.accesswidener")
 }
 
-architectury {
-    common {
-        for(p in rootProject.subprojects) {
-            if(p != project) {
-                this@common.add(p.name)
-            }
-        }
-    }
-}
+//architectury {
+//    common {
+//        for(p in rootProject.subprojects) {
+//            if(p != project) {
+//                this@common.add(p.name)
+//            }
+//        }
+//    }
+//}
 
 dependencies {
     // We depend on fabric loader here to use the fabric @Environment annotations and get the mixin dependencies
