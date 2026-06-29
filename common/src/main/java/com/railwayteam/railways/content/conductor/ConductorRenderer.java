@@ -35,7 +35,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
-public class ConductorRenderer extends MobRenderer<ConductorEntity, ConductorEntityModel<ConductorEntity>> {
+public class ConductorRenderer extends MobRenderer<ConductorEntity, ConductorRenderState, ConductorEntityModel<ConductorEntity>> {
   public static final ResourceLocation TEXTURE = Railways.asResource("textures/entity/conductor.png");
 
   public ConductorRenderer(EntityRendererProvider.Context ctx) {
