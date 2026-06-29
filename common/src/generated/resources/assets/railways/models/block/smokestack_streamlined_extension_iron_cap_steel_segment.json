@@ -1,6 +1,0 @@
-{
-  "parent": "railways:block/smokestack/streamlined/segment",
-  "textures": {
-    "0": "railways:block/smokestack/streamlined/segment_steel"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "railways:block/smokestack/oilburner/single",
-  "textures": {
-    "0": "railways:block/smokestack/oilburner/iron_cap_brass"
-  }
-}

@@ -1,6 +1,0 @@
-{
-  "parent": "railways:block/smokestack/long/segment",
-  "textures": {
-    "0": "railways:block/smokestack/long/segment_copper"
-  }
-}
