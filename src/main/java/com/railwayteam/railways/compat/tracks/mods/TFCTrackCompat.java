@@ -37,8 +37,8 @@ public class TFCTrackCompat extends GenericTrackCompat {
     @Override
     protected Ingredient getIngredientForRail() {
         return Ingredient.fromValues(Stream.of(
-                AccessorIngredient$TagValue.railways$create(TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("forge", "rods/zinc")))
                 AccessorIngredient$TagValue.railways$create(TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("forge", "rods/wrought_iron"))),
+                AccessorIngredient$TagValue.railways$create(TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("forge", "rods/zinc")))
         ));
     }
 
