@@ -25,7 +25,7 @@ import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.Entity;
@@ -45,7 +45,7 @@ public class PlayerSelectionImpl extends PlayerSelection {
 	}
 
 	@Override
-	public void accept(ResourceLocation id, FriendlyByteBuf buffer) {
+	public void accept(Identifier id, FriendlyByteBuf buffer) {
 		Packet<?> packet = ServerPlayNetworking.createS2CPacket(id, buffer);
 		for (ServerPlayer player : players) {
 			ServerPlayNetworking.getSender(player).sendPacket(packet);

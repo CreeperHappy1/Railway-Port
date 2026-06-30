@@ -23,8 +23,8 @@ import com.railwayteam.railways.base.data.CRTagGen;
 import com.tterrag.registrate.providers.RegistrateTagsProvider;
 import net.minecraft.core.Registry;
 import net.minecraft.data.tags.TagsProvider.TagAppender;
+import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 
 import java.util.function.Consumer;
@@ -43,7 +43,7 @@ public class CommonTag<T> {
 		this.forge = forge;
 	}
 
-	public CommonTag(ResourceKey<? extends Registry<T>> registry, ResourceLocation common, ResourceLocation fabric, ResourceLocation forge) {
+	public CommonTag(ResourceKey<? extends Registry<T>> registry, Identifier common, Identifier fabric, Identifier forge) {
 		this(TagKey.create(registry, common), TagKey.create(registry, fabric), TagKey.create(registry, forge));
 	}
 
@@ -51,8 +51,8 @@ public class CommonTag<T> {
 		return new CommonTag<>(
 				registry,
 				Railways.asResource("internal/" + common),
-				new ResourceLocation("c", fabric),
-				new ResourceLocation("forge", forge)
+				Identifier.fromNamespaceAndPath("c", fabric),
+				Identifier.fromNamespaceAndPath("forge", forge)
 		);
 	}
 

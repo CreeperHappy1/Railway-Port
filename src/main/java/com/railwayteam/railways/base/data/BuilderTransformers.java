@@ -57,10 +57,6 @@ import com.railwayteam.railways.registry.CRPalettes.Wrapping;
 import com.railwayteam.railways.registry.CRTags;
 import com.railwayteam.railways.util.FusedSupplier;
 import com.zurrtum.create.AllBlocks;
-import com.zurrtum.create.AllEntityTags;
-import com.zurrtum.create.AllFluidTags;
-import com.zurrtum.create.AllItemTags;
-import com.zurrtum.create.content.contraptions.behaviour.DoorMovingInteraction;
 import com.zurrtum.create.content.decoration.MetalLadderBlock;
 import com.zurrtum.create.content.kinetics.flywheel.FlywheelBlock;
 //import com.zurrtum.create.foundation.data.SharedProperties;//TODO what does this do?
@@ -76,7 +72,7 @@ import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Direction;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
@@ -360,7 +356,7 @@ public class BuilderTransformers {
     }
 
     @ExpectPlatform
-    public static <B extends TrackBufferBlock<?>, P> NonNullUnaryOperator<BlockBuilder<B, P>> bufferBlockState(Function<BlockState, ResourceLocation> modelFunc, Function<BlockState, Direction> facingFunc) {
+    public static <B extends TrackBufferBlock<?>, P> NonNullUnaryOperator<BlockBuilder<B, P>> bufferBlockState(Function<BlockState, Identifier> modelFunc, Function<BlockState, Direction> facingFunc) {
         throw new AssertionError();
     }
 

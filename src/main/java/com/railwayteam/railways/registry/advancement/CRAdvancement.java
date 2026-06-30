@@ -33,7 +33,7 @@ import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.advancements.critereon.ItemUsedOnLocationTrigger;
 import net.minecraft.advancements.critereon.MinMaxBounds;
 import net.minecraft.advancements.critereon.NbtPredicate;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.player.Player;
@@ -50,7 +50,7 @@ import java.util.function.UnaryOperator;
 
 public class CRAdvancement {
 
-	static final ResourceLocation BACKGROUND = Railways.asResource("textures/gui/advancements.png");
+	static final Identifier BACKGROUND = Railways.asResource("textures/gui/advancements.png");
 	static final String LANG = "advancement." + Railways.MOD_ID + ".";
 	static final String SECRET_SUFFIX = "\n\u00A77(Hidden Advancement)";
 

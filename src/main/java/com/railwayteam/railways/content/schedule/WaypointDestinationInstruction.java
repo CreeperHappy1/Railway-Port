@@ -20,7 +20,7 @@ package com.railwayteam.railways.content.schedule;
 
 import com.railwayteam.railways.Railways;
 import com.zurrtum.create.content.trains.schedule.destination.DestinationInstruction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 public class WaypointDestinationInstruction extends DestinationInstruction {
 
@@ -30,7 +30,7 @@ public class WaypointDestinationInstruction extends DestinationInstruction {
 	}
 
 	@Override
-	public ResourceLocation getId() {
+	public Identifier getId() {
 		return Railways.asResource("waypoint_destination");
 	}
 }

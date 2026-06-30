@@ -24,7 +24,7 @@ import com.railwayteam.railways.impl.bogeymenu.v0.BogeyMenuManagerImpl;
 import com.zurrtum.create.content.trains.bogey.BogeySizes;
 import com.zurrtum.create.content.trains.bogey.BogeyStyle;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

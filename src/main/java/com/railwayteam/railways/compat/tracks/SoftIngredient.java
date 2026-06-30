@@ -20,7 +20,7 @@ package com.railwayteam.railways.compat.tracks;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.jetbrains.annotations.NotNull;
 
@@ -30,13 +30,13 @@ import java.util.stream.Stream;
  * Represents a special ingredient for datagen - it references an item that does not necessarily exist
  */
 public class SoftIngredient extends Ingredient {//TODO refactor or substitute use case
-    public final ResourceLocation item;
-    public SoftIngredient(ResourceLocation item) {
+    public final Identifier item;
+    public SoftIngredient(Identifier item) {
         super(Stream.empty());
         this.item = item;
     }
 
-    public static SoftIngredient of(ResourceLocation item) {
+    public static SoftIngredient of(Identifier item) {
         return new SoftIngredient(item);
     }
 

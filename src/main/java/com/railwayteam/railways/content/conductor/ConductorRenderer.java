@@ -30,13 +30,13 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.LivingEntityRenderer;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.layers.HumanoidArmorLayer;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.NotNull;
 
 public class ConductorRenderer extends MobRenderer<ConductorEntity, ConductorRenderState, ConductorEntityModel<ConductorEntity>> {
-  public static final ResourceLocation TEXTURE = Railways.asResource("textures/entity/conductor.png");
+  public static final Identifier TEXTURE = Railways.asResource("textures/entity/conductor.png");
 
   public ConductorRenderer(EntityRendererProvider.Context ctx) {
     super (ctx, new ConductorEntityModel<>(ctx.bakeLayer(ConductorEntityModel.LAYER_LOCATION)), 0.2f);
@@ -52,13 +52,13 @@ public class ConductorRenderer extends MobRenderer<ConductorEntity, ConductorRen
     this.addLayer(new ConductorElytraLayer<>(this, ctx.getModelSet()));
   }
 
-  private ResourceLocation ensurePng(ResourceLocation loc) {
+  private Identifier ensurePng(Identifier loc) {
     if (loc.getPath().endsWith(".png")) return loc;
-    return new ResourceLocation(loc.getNamespace(), loc.getPath() + ".png");
+    return Identifier.fromNamespaceAndPath(loc.getNamespace(), loc.getPath() + ".png");
   }
 
   @Override
-  public @NotNull ResourceLocation getTextureLocation(@NotNull ConductorEntity conductor) {
+  public @NotNull Identifier getTextureLocation(@NotNull ConductorEntity conductor) {
     ItemStack headItem = conductor.getItemBySlot(EquipmentSlot.HEAD);
     String name = headItem.getHoverName().getString();
     if (name.startsWith("[sus]"))

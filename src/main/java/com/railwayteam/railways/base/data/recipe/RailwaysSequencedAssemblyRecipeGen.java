@@ -26,7 +26,7 @@ import com.zurrtum.create.AllTags;
 import com.zurrtum.create.content.kinetics.deployer.DeployerApplicationRecipe;
 import com.zurrtum.create.content.kinetics.press.PressingRecipe;
 import com.zurrtum.create.content.kinetics.saw.CuttingRecipe;
-import com.zurrtum.create.content.processing.sequenced.SequencedAssemblyRecipeBuilder;
+import com.zurrtum.create.content.processing.sequenced.SequencedAssemblyRecipe;
 import com.zurrtum.create.content.trains.track.TrackMaterial;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.DyeColor;

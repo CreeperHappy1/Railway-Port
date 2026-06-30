@@ -28,7 +28,7 @@ import net.minecraft.client.renderer.block.model.BakedQuad;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
 import net.minecraft.client.resources.model.BakedModel;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
@@ -41,7 +41,7 @@ import java.util.function.UnaryOperator;
 
 @Environment(EnvType.CLIENT)
 public class BufferModelUtils {
-    public static final StitchedSprite SPRUCE_PLANKS_TEMPLATE = new StitchedSprite(new ResourceLocation("block/spruce_planks"));
+    public static final StitchedSprite SPRUCE_PLANKS_TEMPLATE = new StitchedSprite(Identifier.withDefaultNamespace("block/spruce_planks"));
     public static final StitchedSprite BIG_BUFFER_TEMPLATE = new StitchedSprite(Railways.asResource("block/buffer/big_buffer"));
     public static final StitchedSprite SMALL_BUFFER_TEMPLATE = new StitchedSprite(Railways.asResource("block/buffer/small_buffer"));
     public static final StitchedSprite SMALL_BUFFER_MONORAIL_TEMPLATE = new StitchedSprite(Railways.asResource("block/buffer/small_buffer_monorail"));
@@ -58,7 +58,7 @@ public class BufferModelUtils {
     public static UnaryOperator<TextureAtlasSprite> getSwapper(@Nullable BlockState planksState) {
         if (planksState == null) return sprite -> null;
         Block planksBlock = planksState.getBlock();
-        ResourceLocation id = RegisteredObjects.getKeyOrThrow(planksBlock);
+        Identifier id = RegisteredObjects.getKeyOrThrow(planksBlock);
         String path = id.getPath();
 
         if (path.endsWith("_planks")) {

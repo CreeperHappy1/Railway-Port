@@ -27,7 +27,7 @@ import com.zurrtum.create.content.trains.track.TrackMaterial;
 import net.fabricmc.fabric.api.resource.conditions.v1.ConditionJsonProvider;
 import net.fabricmc.fabric.api.resource.conditions.v1.DefaultResourceConditions;
 import net.minecraft.data.recipes.FinishedRecipe;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 import java.util.List;
 import java.util.function.Consumer;
@@ -36,7 +36,7 @@ import java.util.function.Consumer;
  * Extends Create's Fabric recipe builder with Forge conditional recipe support as well.
  */
 public class RailwaysSequencedAssemblyRecipeBuilder extends SequencedAssemblyRecipeBuilder {
-    public RailwaysSequencedAssemblyRecipeBuilder(ResourceLocation id) {
+    public RailwaysSequencedAssemblyRecipeBuilder(Identifier id) {
         super(id);
     }
 

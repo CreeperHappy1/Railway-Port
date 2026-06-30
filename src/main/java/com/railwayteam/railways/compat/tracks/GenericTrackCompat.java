@@ -34,7 +34,7 @@ import com.zurrtum.create.content.trains.track.TrackBlock;
 import com.zurrtum.create.content.trains.track.TrackMaterial;
 import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 
@@ -145,11 +145,11 @@ public class GenericTrackCompat {
         return TextUtils.titleCaseConversion(name.replace('_', ' '));
     }
 
-    protected ResourceLocation asResource(String path) {
-        return new ResourceLocation(modid, path);
+    protected Identifier asResource(String path) {
+        return Identifier.fromNamespaceAndPath(modid, path);
     }
 
-    protected ResourceLocation getSlabLocation(String name) {
+    protected Identifier getSlabLocation(String name) {
         return asResource(name+"_slab");
     }
 

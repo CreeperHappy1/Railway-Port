@@ -22,7 +22,7 @@ import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.content.custom_bogeys.special.monobogey.MonoBogeyBlock;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.block.Block;
@@ -76,7 +76,7 @@ public class MonoTrackBufferBlock extends WoodVariantTrackBufferBlock {
             this.model = model;
         }
 
-        public ResourceLocation getModel() {
+        public Identifier getModel() {
             return Railways.asResource("block/buffer/" + model);
         }
 

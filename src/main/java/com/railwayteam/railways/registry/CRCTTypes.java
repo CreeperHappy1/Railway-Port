@@ -24,7 +24,7 @@ import com.zurrtum.create.foundation.block.connected.CTTypeRegistry;
 import com.zurrtum.create.foundation.block.connected.ConnectedTextureBehaviour;
 import com.zurrtum.create.foundation.block.connected.ConnectedTextureBehaviour.ContextRequirement;
 import com.zurrtum.create.foundation.utility.Lang;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 public enum CRCTTypes implements CTType {
     VERTICAL_PINKMACHINE(2, ContextRequirement.builder().vertical().build()) {
@@ -41,7 +41,7 @@ public enum CRCTTypes implements CTType {
     }
     ;
 
-    private final ResourceLocation id;
+    private final Identifier id;
     private final int sheetSize;
     private final ContextRequirement contextRequirement;
 
@@ -54,7 +54,7 @@ public enum CRCTTypes implements CTType {
     }
 
     @Override
-    public ResourceLocation getId() {
+    public Identifier getId() {
         return id;
     }
 

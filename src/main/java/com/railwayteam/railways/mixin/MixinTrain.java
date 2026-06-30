@@ -58,7 +58,7 @@ import com.zurrtum.create.foundation.utility.Pair;
 import com.zurrtum.create.infrastructure.config.AllConfigs;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.util.Mth;
 import net.minecraft.world.Containers;
 import net.minecraft.world.entity.player.Player;
@@ -101,7 +101,7 @@ public abstract class MixinTrain implements IOccupiedCouplers, IIndexedSchedule,
     @Unique protected int railways$controlBlockedTicks = -1;
     @Unique protected int railways$controlBlockedSign = 0;
     @Unique protected boolean railways$skipRealismSpeedLimit = false;
-    @Unique protected @Nullable ResourceLocation railways$shadowKey = null;
+    @Unique protected @Nullable Identifier railways$shadowKey = null;
 
     @Override
     public boolean railways$isControlBlocked() {
@@ -275,7 +275,7 @@ public abstract class MixinTrain implements IOccupiedCouplers, IIndexedSchedule,
         ((IHandcarTrain) train).railways$setHandcar(tag.getBoolean("IsHandcar"));
 
         if (tag.contains("ShadowKey", Tag.TAG_STRING)) {
-            ((IShadowTrain) train).railways$setShadow(new ResourceLocation(tag.getString("ShadowKey")));
+            ((IShadowTrain) train).railways$setShadow(Identifier.parse(tag.getString("ShadowKey").get()));
         } else {
             ((IShadowTrain) train).railways$clearShadow();
         }
@@ -377,7 +377,7 @@ public abstract class MixinTrain implements IOccupiedCouplers, IIndexedSchedule,
     }
 
     @Override
-    public void railways$setShadow(@NotNull ResourceLocation shadowKey) {
+    public void railways$setShadow(@NotNull Identifier shadowKey) {
         railways$shadowKey = shadowKey;
     }
 
@@ -387,7 +387,7 @@ public abstract class MixinTrain implements IOccupiedCouplers, IIndexedSchedule,
     }
 
     @Override
-    public @Nullable ResourceLocation railways$getShadowKey() {
+    public @Nullable Identifier railways$getShadowKey() {
         return railways$shadowKey;
     }
 }

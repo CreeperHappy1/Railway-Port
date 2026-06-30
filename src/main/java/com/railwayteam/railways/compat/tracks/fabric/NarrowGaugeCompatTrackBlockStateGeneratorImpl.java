@@ -9,7 +9,7 @@ import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;
 import io.github.fabricators_of_create.porting_lib.models.generators.block.BlockModelBuilder;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -66,14 +66,14 @@ public class NarrowGaugeCompatTrackBlockStateGeneratorImpl extends NarrowGaugeCo
                 Railways.asResource("block/narrow_gauge_base/" + value.getModel()))
             .texture("particle", material.particle);
         for (String k : textureMap.keySet()) {
-            builder = builder.texture(k, new ResourceLocation(textureModId, texturePrefix + textureMap.get(k) + resName));
+            builder = builder.texture(k, Identifier.fromNamespaceAndPath(textureModId, texturePrefix + textureMap.get(k) + resName));
         }
         for (String k : new String[]{"segment_left", "segment_right", "tie"}) { // obj_track
             prov.models()
                 .withExistingParent(outputPrefix + k,
                     Railways.asResource("block/narrow_gauge_base/" + k))
-                .texture("0", new ResourceLocation(textureModId, texturePrefix + "standard_track_" + resName))
-                .texture("1", new ResourceLocation(textureModId, texturePrefix + "standard_track_mip_" + resName))
+                .texture("0", Identifier.fromNamespaceAndPath(textureModId, texturePrefix + "standard_track_" + resName))
+                .texture("1", Identifier.fromNamespaceAndPath(textureModId, texturePrefix + "standard_track_mip_" + resName))
                 .texture("particle", material.particle);
         }
         return builder;

@@ -30,7 +30,7 @@ import com.zurrtum.create.content.redstone.displayLink.AllDisplayBehaviours;
 import com.zurrtum.create.content.redstone.displayLink.DisplayBehaviour;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 
@@ -71,7 +71,7 @@ public class CRExtraRegistration {
         }
     }
 
-    private static void addRailwaysBlockToCreateBlockEntity(BlockEntry<?> railwaysBlock, ResourceLocation createBE) {
+    private static void addRailwaysBlockToCreateBlockEntity(BlockEntry<?> railwaysBlock, Identifier createBE) {
         MultiRegistryCallback.create(
             Create.REGISTRATE, Registries.BLOCK_ENTITY_TYPE, createBE,
             Railways.registrate(), Registries.BLOCK, railwaysBlock.getId(),

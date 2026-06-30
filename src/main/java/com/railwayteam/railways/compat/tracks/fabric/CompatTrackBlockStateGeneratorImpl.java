@@ -9,7 +9,7 @@ import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;
 import io.github.fabricators_of_create.porting_lib.models.generators.block.BlockModelBuilder;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -61,14 +61,14 @@ public class CompatTrackBlockStateGeneratorImpl extends CompatTrackBlockStateGen
                 Create.asResource("block/track/" + value.getModel()))
             .texture("particle", material.particle);
         for (String k : textureMap.keySet()) {
-            builder = builder.texture(k, new ResourceLocation(material.id.getNamespace(), prefix + textureMap.get(k) + material.resourceName()));
+            builder = builder.texture(k, Identifier.fromNamespaceAndPath(material.id.getNamespace(), prefix + textureMap.get(k) + material.resourceName()));
         }
         for (String k : new String[]{"segment_left", "segment_right", "tie"}) { // obj_track
             prov.models()
                 .withExistingParent(outputPrefix + k,
                     Create.asResource("block/track/" + k))
-                .texture("0", new ResourceLocation(material.id.getNamespace(), prefix + "standard_track_" + material.resourceName()))
-                .texture("1", new ResourceLocation(material.id.getNamespace(), prefix + "standard_track_mip_" + material.resourceName()))
+                .texture("0", Identifier.fromNamespaceAndPath(material.id.getNamespace(), prefix + "standard_track_" + material.resourceName()))
+                .texture("1", Identifier.fromNamespaceAndPath(material.id.getNamespace(), prefix + "standard_track_mip_" + material.resourceName()))
                 .texture("particle", material.particle);
         }
         return builder;

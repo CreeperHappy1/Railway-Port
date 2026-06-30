@@ -21,7 +21,7 @@ package com.railwayteam.railways.registry;
 import com.railwayteam.railways.content.moving_bes.GuiBlockMovingInteractionBehaviour;
 import com.zurrtum.create.AllInteractionBehaviours;
 import com.zurrtum.create.content.contraptions.behaviour.MovingInteractionBehaviour;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 
@@ -39,7 +39,7 @@ public class CRInteractionBehaviours {
         AllInteractionBehaviours.registerBehaviour(block, behaviour);
     }
 
-    private static void add(ResourceLocation block, MovingInteractionBehaviour behaviour) {
+    private static void add(Identifier block, MovingInteractionBehaviour behaviour) {
         AllInteractionBehaviours.registerBehaviour(block, behaviour);
     }
 }

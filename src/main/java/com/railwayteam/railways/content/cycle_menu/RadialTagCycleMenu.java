@@ -38,7 +38,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.util.Mth;
 import net.minecraft.world.item.Item;
@@ -94,7 +94,7 @@ public class RadialTagCycleMenu extends AbstractSimiScreen {
         ms.pushPose();
         ms.translate(width / 2, height / 2, 0);
         Component tip = null;
-        ResourceLocation tagLoc = tag.location();
+        Identifier tagLoc = tag.location();
         Component title = Components.translatable("tag.item." + tagLoc.getNamespace() + "." + tagLoc.getPath().replace('/', '.'));
 
         /*

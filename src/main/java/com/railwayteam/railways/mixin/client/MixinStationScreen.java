@@ -34,7 +34,7 @@ import com.zurrtum.create.foundation.utility.Lang;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Checkbox;
 import net.minecraft.client.gui.components.EditBox;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -48,7 +48,7 @@ import java.util.List;
 public abstract class MixinStationScreen extends AbstractStationScreen {
     @Shadow private EditBox trainNameBox;
     private Checkbox limitEnableCheckbox;
-    private List<ResourceLocation> iconTypes;
+    private List<Identifier> iconTypes;
     private ScrollInput iconTypeScroll;
 
     private MixinStationScreen(StationBlockEntity te, GlobalStation station) {

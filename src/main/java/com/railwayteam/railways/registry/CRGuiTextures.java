@@ -27,7 +27,7 @@ import com.zurrtum.create.foundation.utility.Color;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 /*
 Copied from Create
@@ -50,7 +50,7 @@ public enum CRGuiTextures implements ScreenElement {
 
     public static final int FONT_COLOR = 0x575F7A;
 
-    public final ResourceLocation location;
+    public final Identifier location;
     public final int width, height;
     public final int startX, startY;
 
@@ -67,7 +67,7 @@ public enum CRGuiTextures implements ScreenElement {
     }
 
     private CRGuiTextures(String namespace, String location, int startX, int startY, int width, int height) {
-        this.location = new ResourceLocation(namespace, "textures/gui/" + location + ".png");
+        this.location = Identifier.fromNamespaceAndPath(namespace, "textures/gui/" + location + ".png");
         this.width = width;
         this.height = height;
         this.startX = startX;

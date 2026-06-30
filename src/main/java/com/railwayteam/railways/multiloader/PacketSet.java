@@ -31,7 +31,7 @@ import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 import org.jetbrains.annotations.ApiStatus.Internal;
 
@@ -50,8 +50,8 @@ public abstract class PacketSet {
 	public final String id;
 	public final int version;
 
-	public final ResourceLocation c2sPacket;
-	public final ResourceLocation s2cPacket;
+	public final Identifier c2sPacket;
+	public final Identifier s2cPacket;
 
 	private final List<Function<FriendlyByteBuf, S2CPacket>> s2cPackets;
 	private final Object2IntMap<Class<? extends S2CPacket>> s2cTypes;
@@ -72,8 +72,8 @@ public abstract class PacketSet {
 		this.c2sPackets = c2sPackets;
 		this.c2sTypes = c2sTypes;
 
-		c2sPacket = new ResourceLocation(id, "c2s");
-		s2cPacket = new ResourceLocation(id, "s2c");
+		c2sPacket = Identifier.fromNamespaceAndPath(id, "c2s");
+		s2cPacket = Identifier.fromNamespaceAndPath(id, "s2c");
 	}
 
 	/**

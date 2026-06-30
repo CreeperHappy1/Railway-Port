@@ -30,7 +30,7 @@ import com.zurrtum.create.foundation.gui.widget.Indicator;
 import com.zurrtum.create.foundation.utility.Pair;
 import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.*;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -118,7 +118,7 @@ public class BogeyMenuHandlerClient {
                 favorites.clear();
                 for (Tag favoriteTag : favoritesList) {
                     if (favoriteTag instanceof StringTag stringTag) {
-                        ResourceLocation loc = ResourceLocation.tryParse(stringTag.getAsString());
+                        Identifier loc = Identifier.tryParse(stringTag.getAsString());
                         if (loc == null)
                             continue;
                         if (AllBogeyStyles.BOGEY_STYLES.containsKey(loc)) {

@@ -25,7 +25,7 @@ import com.railwayteam.railways.util.FluidUtils;
 import com.zurrtum.create.content.processing.recipe.ProcessingRecipe;
 import com.zurrtum.create.content.processing.recipe.ProcessingRecipeSerializer;
 import com.zurrtum.create.foundation.fluid.FluidIngredient;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -54,7 +54,7 @@ public class MixinProcessingRecipeSerializer<T extends ProcessingRecipe<?>> {
     }
 
     @Inject(method = "readFromJson", at = @At("HEAD"), remap = false)
-    private void multiloaderDemangleFluidIngredient(ResourceLocation recipeId, JsonObject json, CallbackInfoReturnable<T> cir) {
+    private void multiloaderDemangleFluidIngredient(Identifier recipeId, JsonObject json, CallbackInfoReturnable<T> cir) {
         if (!recipeId.getNamespace().equals(Railways.MOD_ID)) return;
         if (!json.has("ingredients")) return;
 

@@ -88,7 +88,7 @@ import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;
 import io.github.fabricators_of_create.porting_lib.models.generators.block.BlockModelBuilder;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.Direction;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.BlockItem;
@@ -201,7 +201,7 @@ public class BuilderTransformersImpl {
             .forAllStates(state -> ConfiguredModel.builder()
                 .modelFile(p.models().getExistingFile(state.getValue(CONDUCTOR_VISIBLE) ?
                     Railways.asResource("block/copycat_vent_visible") :
-                    new ResourceLocation("block/air")))
+                    Identifier.withDefaultNamespace("block/air")))
                 .build()));
     }
 
@@ -319,8 +319,8 @@ public class BuilderTransformersImpl {
         return b -> b.transform(locoMetalBase(color, null))
             .blockstate((c, p) -> {
                 String modelName = "block/palettes/"+TextUtils.prefixToFolder(c.getName(), color.getSerializedName());
-                ResourceLocation side = p.modLoc("block/palettes/" + color.getSerializedName() + "/riveted_pillar_side");
-                ResourceLocation end = p.modLoc("block/palettes/" + color.getSerializedName() + "/riveted_pillar_top");
+                Identifier side = p.modLoc("block/palettes/" + color.getSerializedName() + "/riveted_pillar_side");
+                Identifier end = p.modLoc("block/palettes/" + color.getSerializedName() + "/riveted_pillar_top");
                 p.axisBlock(c.get(),
                     p.models().cubeColumn(modelName, side, end),
                     p.models().cubeColumnHorizontal(modelName + "_horizontal", side, end)
@@ -381,7 +381,7 @@ public class BuilderTransformersImpl {
             .transform(BlockStressDefaults.setNoImpact())
             .blockstate((c, p) -> {
                 String modelName = join("/", "block", "palettes", "flywheel", color.getSerializedName(), "block");
-                ResourceLocation flywheelTex = p.modLoc(join("/", "block", "palettes", color.getSerializedName(), "flywheel"));
+                Identifier flywheelTex = p.modLoc(join("/", "block", "palettes", color.getSerializedName(), "flywheel"));
                 BlockStateGen.axisBlock(
                     c, p,
                     $ -> p.models().withExistingParent(modelName, Create.asResource("block/flywheel/block"))
@@ -392,7 +392,7 @@ public class BuilderTransformersImpl {
             .item()
             .tag(tags)
             .model((c, p) -> {
-                ResourceLocation flywheelTex = p.modLoc(join("/", "block", "palettes", color.getSerializedName(), "flywheel"));
+                Identifier flywheelTex = p.modLoc(join("/", "block", "palettes", color.getSerializedName(), "flywheel"));
                 p.withExistingParent(c.getName(), Create.asResource("block/flywheel/item"))
                     .texture("0", flywheelTex)
                     .texture("particle", flywheelTex);
@@ -523,8 +523,8 @@ public class BuilderTransformersImpl {
         return b -> b.transform(locoMetalBase(color, null))
             .blockstate((c, p) -> {
                 String modelName = "block/palettes/"+TextUtils.prefixToFolder(c.getName(), color.getSerializedName());
-                ResourceLocation side = p.modLoc("block/palettes/" + color.getSerializedName() + "/" + type.getTextureName());
-                ResourceLocation end = p.modLoc("block/palettes/" + color.getSerializedName() + "/" + type.getTextureName());
+                Identifier side = p.modLoc("block/palettes/" + color.getSerializedName() + "/" + type.getTextureName());
+                Identifier end = p.modLoc("block/palettes/" + color.getSerializedName() + "/" + type.getTextureName());
                 axisBlock(p, c.get(),
                     p.models().cubeColumn(modelName, side, end),
                     p.models().cubeColumnHorizontal(modelName + "_horizontal", side, end)
@@ -653,7 +653,7 @@ public class BuilderTransformersImpl {
             .onRegister(CreateRegistrate.blockModel(() -> CopycatHeadstockBarsModel::new));
     }
 
-    public static <B extends TrackBufferBlock<?>, P> NonNullUnaryOperator<BlockBuilder<B, P>> bufferBlockState(Function<BlockState, ResourceLocation> modelFunc, Function<BlockState, Direction> facingFunc) {
+    public static <B extends TrackBufferBlock<?>, P> NonNullUnaryOperator<BlockBuilder<B, P>> bufferBlockState(Function<BlockState, Identifier> modelFunc, Function<BlockState, Direction> facingFunc) {
         return b -> b.blockstate((c, p) -> p.getVariantBuilder(c.getEntry())
             .forAllStatesExcept(state -> ConfiguredModel.builder()
                 .modelFile(p.models().getExistingFile(modelFunc.apply(state)))

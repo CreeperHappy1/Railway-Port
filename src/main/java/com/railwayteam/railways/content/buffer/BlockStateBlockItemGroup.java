@@ -29,7 +29,7 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.entry.ItemEntry;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.state.properties.Property;
@@ -42,7 +42,7 @@ import java.util.Map;
 
 public class BlockStateBlockItemGroup<C, T extends BlockStateBlockItemGroup.IStyle<C> & Comparable<T>> {
     private static final CreateRegistrate REGISTRATE = Railways.registrate();
-    private static final HashMap<ResourceLocation, BlockStateBlockItemGroup<?, ?>> ALL = new HashMap<>();
+    private static final HashMap<Identifier, BlockStateBlockItemGroup<?, ?>> ALL = new HashMap<>();
 
     private final C context;
     @NotNull private final Property<T> property;
@@ -88,7 +88,7 @@ public class BlockStateBlockItemGroup<C, T extends BlockStateBlockItemGroup.ISty
         ALL.put(blockEntry.getId(), this);
     }
 
-    public static BlockStateBlockItemGroup<?, ?> get(ResourceLocation id) {
+    public static BlockStateBlockItemGroup<?, ?> get(Identifier id) {
         return ALL.get(id);
     }
 
@@ -134,7 +134,7 @@ public class BlockStateBlockItemGroup<C, T extends BlockStateBlockItemGroup.ISty
     }
 
     public interface IStyle<T> {
-        ResourceLocation getModel(T context);
+        Identifier getModel(T context);
 
         String getBlockId(T context);
 

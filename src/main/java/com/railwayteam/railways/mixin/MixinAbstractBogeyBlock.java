@@ -26,7 +26,7 @@ import com.zurrtum.create.content.trains.bogey.BogeyStyle;
 import com.zurrtum.create.content.trains.track.ITrackBlock;
 import com.zurrtum.create.content.trains.track.TrackMaterial.TrackType;
 import net.minecraft.core.BlockPos;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -82,7 +82,7 @@ public abstract class MixinAbstractBogeyBlock {
     }
 
     @WrapOperation(method = "getNextStyle(Lcom/simibubi/create/content/trains/bogey/BogeyStyle;)Lcom/simibubi/create/content/trains/bogey/BogeyStyle;", at = @At(value = "INVOKE", target = "Ljava/util/Map;values()Ljava/util/Collection;"))
-    private Collection<BogeyStyle> filterStyles(Map<ResourceLocation, BogeyStyle> instance, Operation<Collection<BogeyStyle>> original) {
+    private Collection<BogeyStyle> filterStyles(Map<Identifier, BogeyStyle> instance, Operation<Collection<BogeyStyle>> original) {
         TrackType trackType = railways$trackType.get();
         if (trackType == null) {
             return original.call(instance);

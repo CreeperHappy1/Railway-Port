@@ -54,7 +54,7 @@ import net.minecraft.nbt.ListTag;
 import net.minecraft.nbt.NbtUtils;
 import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -290,7 +290,7 @@ public class ConductorWhistleItem extends TrackTargetingBlockItem {
                 if (!scheduleStack.isEmpty()) {
                     for (CompoundTag passengerTag : ((AccessorCarriage) conductorCarriage).getSerialisedPassengers().values()) {
                         if (passengerTag.contains("PlayerPassenger")) continue;
-                        if (passengerTag.contains("id") && CREntities.CONDUCTOR.getId().equals(new ResourceLocation(passengerTag.getString("id")))) {
+                        if (passengerTag.contains("id") && CREntities.CONDUCTOR.getId().equals(Identifier.parse(passengerTag.getString("id").get()))) {
                             // It is a conductor
                             if (passengerTag.hasUUID("UUID") && passengerTag.getUUID("UUID").equals(conductorId)) {
                                 // It is the targeted conductor

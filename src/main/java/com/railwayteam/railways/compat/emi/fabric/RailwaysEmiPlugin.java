@@ -28,7 +28,7 @@ import com.zurrtum.create.content.processing.recipe.ProcessingRecipeBuilder;
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.stack.Comparison;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.crafting.Ingredient;
 
 import static com.railwayteam.railways.base.data.recipe.RailwaysRecipeProvider.Ingredients.palettesPaint;
@@ -43,7 +43,7 @@ public class RailwaysEmiPlugin implements EmiPlugin {
 
             String path = "create/filling/railways/empty_paint_pitcher/with/railways/paint/" + color.getSerializedName();
             registry.addRecipe(new SpoutEmiRecipe(
-                new ProcessingRecipeBuilder<>(FillingRecipe::new, new ResourceLocation("emi", path))
+                new ProcessingRecipeBuilder<>(FillingRecipe::new, Identifier.fromNamespaceAndPath("emi", path))
                     .withItemIngredients(Ingredient.of(CRItems.EMPTY_PAINT_PITCHER))
                     .withFluidIngredients(palettesPaint(color, PaintPitcherItem.FLUID_PER_LEVEL * PaintPitcherItem.MAX_LEVELS))
                     .withSingleItemOutput(CRItems.PAINT_PITCHERS.get(color).asStack())

@@ -36,7 +36,7 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 import com.tterrag.registrate.util.nullness.NonNullBiConsumer;
 import com.tterrag.registrate.util.nullness.NonNullConsumer;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Block;
@@ -76,7 +76,7 @@ public abstract class TrackCompatUtils {
     }
 
     @ApiStatus.Internal
-    public static boolean mixinSkipLootLoading(ResourceLocation resourceLocation) {
+    public static boolean mixinSkipLootLoading(Identifier resourceLocation) {
         if (resourceLocation.getNamespace().equals(Railways.MOD_ID)) {
             for (String compatMod : TRACK_COMPAT_MODS) {
                 if (resourceLocation.getPath().startsWith("blocks/track_"+compatMod)) {
@@ -138,7 +138,7 @@ public abstract class TrackCompatUtils {
             .onRegister(CRTrackMaterials::addToBlockEntityType)
             .item(TrackBlockItem::new)
             .removeTab(hideInCreativeTabs ? null : CreativeModeTabs.SEARCH)
-            .model((c, p) -> p.generated(c, new ResourceLocation(owningMod, "item/track/track_"+material.resourceName())))
+            .model((c, p) -> p.generated(c, Identifier.fromNamespaceAndPath(owningMod, "item/track/track_"+material.resourceName())))
             .build()
             .register();
     }

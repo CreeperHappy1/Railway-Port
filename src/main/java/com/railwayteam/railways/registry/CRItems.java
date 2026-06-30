@@ -44,7 +44,7 @@ import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.vehicle.AbstractMinecart;
 import net.minecraft.world.item.DyeColor;
@@ -66,7 +66,7 @@ public class CRItems {
     public static final TagKey<Item> CONDUCTOR_CAPS = CRTags.AllItemTags.CONDUCTOR_CAPS.tag;
 
     public static TagKey<Item> makeItemTag(String mod, String path) {
-        return TagKey.create(Registries.ITEM, new ResourceLocation(mod, path));
+        return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(mod, path));
     }
 
     private static ItemBuilder<? extends Item, ?> makeMinecart(String name, AbstractMinecart.Type type) {

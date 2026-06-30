@@ -20,7 +20,7 @@ package com.railwayteam.railways.registry;
 
 import com.zurrtum.create.AllMovementBehaviours;
 import com.zurrtum.create.content.contraptions.behaviour.MovementBehaviour;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 
 public class CRMovementBehaviours {
@@ -32,7 +32,7 @@ public class CRMovementBehaviours {
         AllMovementBehaviours.registerBehaviour(block, behaviour);
     }
 
-    private static void add(ResourceLocation block, MovementBehaviour behaviour) {
+    private static void add(Identifier block, MovementBehaviour behaviour) {
         AllMovementBehaviours.registerBehaviour(block, behaviour);
     }
 }

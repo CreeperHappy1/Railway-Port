@@ -39,7 +39,7 @@ import com.tterrag.registrate.util.entry.ItemProviderEntry;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -412,7 +412,7 @@ public class RailwaysStandardRecipeGen extends RailwaysRecipeProvider {
         return new GeneratedRecipeBuilder("/", result);
     }
 
-    GeneratedRecipeBuilder create(ResourceLocation result) {
+    GeneratedRecipeBuilder create(Identifier result) {
         return new GeneratedRecipeBuilder("/", result);
     }
 
@@ -434,7 +434,7 @@ public class RailwaysStandardRecipeGen extends RailwaysRecipeProvider {
         private final String path;
         private String suffix;
         private Supplier<? extends ItemLike> result;
-        private ResourceLocation compatDatagenOutput;
+        private Identifier compatDatagenOutput;
 
         private Supplier<ItemPredicate> unlockedBy;
         private int amount;
@@ -451,7 +451,7 @@ public class RailwaysStandardRecipeGen extends RailwaysRecipeProvider {
             this.result = result;
         }
 
-        public GeneratedRecipeBuilder(String path, ResourceLocation result) {
+        public GeneratedRecipeBuilder(String path, Identifier result) {
             this(path);
             this.compatDatagenOutput = result;
         }
@@ -507,30 +507,30 @@ public class RailwaysStandardRecipeGen extends RailwaysRecipeProvider {
             });
         }
 
-        private static ResourceLocation clean(ResourceLocation loc) {
+        private static Identifier clean(Identifier loc) {
             String path = loc.getPath();
             while (path.contains("//"))
                 path = path.replaceAll("//", "/");
-            return new ResourceLocation(loc.getNamespace(), path);
+            return Identifier.fromNamespaceAndPath(loc.getNamespace(), path);
         }
 
-        private ResourceLocation createSimpleLocation(String recipeType) {
-            ResourceLocation loc = clean(Railways.asResource(recipeType + "/" + getRegistryName().getPath() + suffix));
+        private Identifier createSimpleLocation(String recipeType) {
+            Identifier loc = clean(Railways.asResource(recipeType + "/" + getRegistryName().getPath() + suffix));
             if (addToEmiDefaults) {
                 EmiRecipeDefaultsGen.DEFAULT_RECIPES.add(loc);
             }
             return loc;
         }
 
-        private ResourceLocation createLocation(String recipeType) {
-            ResourceLocation loc = clean(Railways.asResource(recipeType + "/" + path + "/" + getRegistryName().getPath() + suffix));
+        private Identifier createLocation(String recipeType) {
+            Identifier loc = clean(Railways.asResource(recipeType + "/" + path + "/" + getRegistryName().getPath() + suffix));
             if (addToEmiDefaults) {
                 EmiRecipeDefaultsGen.DEFAULT_RECIPES.add(loc);
             }
             return loc;
         }
 
-        private ResourceLocation getRegistryName() {
+        private Identifier getRegistryName() {
             return compatDatagenOutput == null ? RegisteredObjects.getKeyOrThrow(result.get()
                 .asItem()) : compatDatagenOutput;
         }

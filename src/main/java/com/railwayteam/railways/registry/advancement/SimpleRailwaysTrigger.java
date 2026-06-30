@@ -22,7 +22,7 @@ import com.google.gson.JsonObject;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.advancements.critereon.ContextAwarePredicate;
 import net.minecraft.advancements.critereon.DeserializationContext;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 
 import javax.annotation.Nullable;
@@ -53,7 +53,7 @@ public class SimpleRailwaysTrigger extends CriterionTriggerBase<SimpleRailwaysTr
 
 	public static class Instance extends CriterionTriggerBase.Instance {
 
-		public Instance(ResourceLocation idIn) {
+		public Instance(Identifier idIn) {
 			super(idIn, ContextAwarePredicate.ANY);
 		}
 

@@ -22,7 +22,7 @@ import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.content.buffer.BlockStateBlockItemGroup;
 import com.railwayteam.railways.registry.CRTags;
 import com.railwayteam.railways.util.TextUtils;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.TagKey;
 import net.minecraft.util.StringRepresentable;
 import net.minecraft.world.item.Item;
@@ -66,17 +66,17 @@ public enum SmokestackStyle implements StringRepresentable, BlockStateBlockItemG
     }
 
     @Override
-    public ResourceLocation getModel(Context context) {
+    public Identifier getModel(Context context) {
         return Railways.asResource("block/" + context.prefix + model + context.modelSuffix);
     }
 
-    public ResourceLocation getTexture(String variant) {
+    public Identifier getTexture(String variant) {
         if (!variant.equals("caboosestyle"))
             return Railways.asResource("block/smokestack/" + variant + "/" + model);
         return Railways.asResource("block/smokestack/caboosestyle");
     }
 
-    public ResourceLocation getSegmentTexture(String variant) {
+    public Identifier getSegmentTexture(String variant) {
         return Railways.asResource("block/smokestack/" + variant + "/segment_" + segmentModel);
     }
 

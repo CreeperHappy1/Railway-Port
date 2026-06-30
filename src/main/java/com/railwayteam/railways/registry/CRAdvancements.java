@@ -27,7 +27,7 @@ import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.PackOutput.PathProvider;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 import java.nio.file.Path;
 import java.util.ArrayList;
@@ -86,9 +86,9 @@ public class CRAdvancements implements DataProvider {
 		PathProvider pathProvider = output.createPathProvider(PackOutput.Target.DATA_PACK, "advancements");
 		List<CompletableFuture<?>> futures = new ArrayList<>();
 
-		Set<ResourceLocation> set = Sets.newHashSet();
+		Set<Identifier> set = Sets.newHashSet();
 		Consumer<Advancement> consumer = (advancement) -> {
-			ResourceLocation id = advancement.getId();
+			Identifier id = advancement.getId();
 			if (!set.add(id))
 				throw new IllegalStateException("Duplicate advancement " + id);
 			Path path = pathProvider.json(id);

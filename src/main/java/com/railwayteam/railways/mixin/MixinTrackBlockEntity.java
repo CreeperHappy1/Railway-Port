@@ -33,7 +33,7 @@ import com.zurrtum.create.foundation.blockEntity.SmartBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
@@ -160,7 +160,7 @@ public abstract class MixinTrackBlockEntity extends SmartBlockEntity implements 
         }
 
         if (tag.contains("TrackCasing")) {
-            ResourceLocation casingName = ResourceLocation.of(tag.getString("TrackCasing"), ':');
+            Identifier casingName = Identifier.of(tag.getString("TrackCasing"), ':');
             if (BuiltInRegistries.BLOCK.containsKey(casingName)) {
                 this.railways$setTrackCasing(BuiltInRegistries.BLOCK.get(casingName));
                 return;

@@ -20,7 +20,7 @@ package com.railwayteam.railways.content.buffer.headstock;
 
 import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.content.buffer.BlockStateBlockItemGroup;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.util.StringRepresentable;
 import org.jetbrains.annotations.NotNull;
 
@@ -43,7 +43,7 @@ public enum HeadstockStyle implements StringRepresentable, BlockStateBlockItemGr
         this.langName = langName;
     }
 
-    public ResourceLocation getModel(boolean copycat, boolean upsideDown) {
+    public Identifier getModel(boolean copycat, boolean upsideDown) {
         return Railways.asResource("block/buffer/headstock/" + (copycat ? "copycat_" : "wooden_") + model + (upsideDown ? "_upside_down" : ""));
     }
 
@@ -58,7 +58,7 @@ public enum HeadstockStyle implements StringRepresentable, BlockStateBlockItemGr
     }
 
     @Override
-    public ResourceLocation getModel(Boolean context) {
+    public Identifier getModel(Boolean context) {
         return getModel(context, false);
     }
 

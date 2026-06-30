@@ -29,7 +29,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;
 import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -120,7 +120,7 @@ public abstract class MixinBezierConnection implements IHasTrackCasing {
                 Railways.LOGGER.error("NBTCtor trackCasing was minecraft:block!!! for BezierConnection: primary="+tePositions.getFirst()+", secondary="+tePositions.getSecond());
             }
             //Railways.LOGGER.warn("NBTCtor: Casing="+compound.getString("Casing"));
-            railways$setTrackCasing(BuiltInRegistries.BLOCK.get(ResourceLocation.of(compound.getString("Casing"), ':')));
+            railways$setTrackCasing(BuiltInRegistries.BLOCK.get(Identifier.of(compound.getString("Casing"), ':')));
         }
         if (compound.contains("ShiftDown", Tag.TAG_BYTE)) {
             railways$setAlternate(compound.getBoolean("ShiftDown"));

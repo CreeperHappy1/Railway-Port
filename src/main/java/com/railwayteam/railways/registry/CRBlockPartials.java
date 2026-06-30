@@ -26,7 +26,7 @@ import com.zurrtum.create.content.trains.track.TrackMaterial.TrackType;
 import com.zurrtum.create.content.trains.track.TrackShape;
 import com.zurrtum.create.foundation.utility.Couple;
 import com.zurrtum.create.foundation.utility.Lang;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.DyeColor;
 import org.jetbrains.annotations.NotNull;
 
@@ -41,9 +41,9 @@ public class CRBlockPartials {
     public static final Map<DyeColor, PartialModel> CONDUCTOR_WHISTLE_FLAGS = new EnumMap<>(DyeColor.class);
     public static final Map<String, PartialModel> CUSTOM_CONDUCTOR_CAPS = new HashMap<>();
     public static final Map<String, PartialModel> CUSTOM_CONDUCTOR_ONLY_CAPS = new HashMap<>();
-    public static final Map<String, ResourceLocation> CUSTOM_CONDUCTOR_SKINS = new HashMap<>();
+    public static final Map<String, Identifier> CUSTOM_CONDUCTOR_SKINS = new HashMap<>();
     public static final Set<String> NO_TILT_CAPS = new HashSet<>();
-    public static final Map<String, ResourceLocation> CUSTOM_CONDUCTOR_SKINS_FOR_NAME = new HashMap<>(); // for if a conductor is renamed, rather than the cap
+    public static final Map<String, Identifier> CUSTOM_CONDUCTOR_SKINS_FOR_NAME = new HashMap<>(); // for if a conductor is renamed, rather than the cap
 
     public static void registerCustomCap(String itemName, String modelLoc) {
         CUSTOM_CONDUCTOR_CAPS.put(itemName, new PartialModel(Railways.asResource("item/dev_caps/"+modelLoc)));

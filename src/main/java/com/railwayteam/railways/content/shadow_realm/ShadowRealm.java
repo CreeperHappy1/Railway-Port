@@ -40,7 +40,7 @@ import com.zurrtum.create.foundation.utility.Lang;
 import com.zurrtum.create.infrastructure.config.AllConfigs;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
@@ -64,7 +64,7 @@ public class ShadowRealm {
         key -> () -> "Shadow key '" + key + "' is already in use"
     );
 
-    public static void banishTrain(Train train, ResourceLocation shadowKey) throws CommandSyntaxException {
+    public static void banishTrain(Train train, Identifier shadowKey) throws CommandSyntaxException {
         IShadowTrain shadowTrain = (IShadowTrain) train;
         if (shadowTrain.railways$isShadow()) return;
 

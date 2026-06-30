@@ -73,7 +73,7 @@ import com.zurrtum.create.content.trains.track.TrackMaterial.TrackType;
 import com.zurrtum.create.foundation.utility.Components;
 import com.zurrtum.create.foundation.utility.Pair;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -342,11 +342,11 @@ public class CRBogeyStyles {
             .displayName(Components.translatable("railways.bogeys.styles." + name));
     }
 
-    public static AllBogeyStyles.BogeyStyleBuilder create(String name, ResourceLocation cycleGroup) {
+    public static AllBogeyStyles.BogeyStyleBuilder create(String name, Identifier cycleGroup) {
         return create(Railways.asResource(name), cycleGroup);
     }
 
-    public static AllBogeyStyles.BogeyStyleBuilder create(ResourceLocation name, ResourceLocation cycleGroup) {
+    public static AllBogeyStyles.BogeyStyleBuilder create(Identifier name, Identifier cycleGroup) {
         return new AllBogeyStyles.BogeyStyleBuilder(name, cycleGroup);
     }
 
@@ -356,7 +356,7 @@ public class CRBogeyStyles {
 
     public static CategoryEntry registerCategory(String modid, String name) {
         Component categoryName = Component.translatable(modid + ".gui.bogey_menu.category." + name);
-        ResourceLocation categoryId = new ResourceLocation(modid, "bogey_menu/category/" + name);
+        Identifier categoryId = Identifier.fromNamespaceAndPath(modid, "bogey_menu/category/" + name);
 
         return BogeyMenuManager.INSTANCE.registerCategory(categoryName, categoryId);
     }
@@ -368,7 +368,7 @@ public class CRBogeyStyles {
     private static void addToCategory(CategoryEntry category, BogeyStyle style, float scale) {
         String bogeyName = style.name.getPath();
         if (style == STANDARD) bogeyName = "default";
-        ResourceLocation icon = Railways.asResource("textures/gui/bogey_icons/" + bogeyName + "_icon.png");
+        Identifier icon = Railways.asResource("textures/gui/bogey_icons/" + bogeyName + "_icon.png");
 
         BogeyMenuManager.INSTANCE.addToCategory(category, style, icon, scale);
     }

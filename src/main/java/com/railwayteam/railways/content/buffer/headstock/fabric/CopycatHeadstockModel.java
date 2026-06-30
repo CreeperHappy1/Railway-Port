@@ -57,7 +57,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtUtils;
 import net.minecraft.nbt.Tag;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.inventory.InventoryMenu;
 import net.minecraft.world.item.DyeColor;
@@ -109,7 +109,7 @@ public class CopycatHeadstockModel extends ForwardingBakedModel {
     }
 
     private static boolean filterCopycatParts(BakedQuad quad) {
-        return !quad.getSprite().contents().name().equals(new ResourceLocation("create", "block/copycat_base"));
+        return !quad.getSprite().contents().name().equals(Identifier.fromNamespaceAndPath("create", "block/copycat_base"));
     }
 
     @Override

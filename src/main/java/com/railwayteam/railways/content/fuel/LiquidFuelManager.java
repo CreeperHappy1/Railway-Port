@@ -21,7 +21,7 @@ package com.railwayteam.railways.content.fuel;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import net.minecraft.server.packs.resources.ResourceManager;
 import net.minecraft.server.packs.resources.SimpleJsonResourceReloadListener;
 import net.minecraft.tags.TagKey;
@@ -36,7 +36,7 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 public class LiquidFuelManager {
-    private static final Map<ResourceLocation, LiquidFuelType> CUSTOM_TYPE_MAP = new HashMap<>();
+    private static final Map<Identifier, LiquidFuelType> CUSTOM_TYPE_MAP = new HashMap<>();
     private static final Map<Fluid, LiquidFuelType> FLUID_TO_TYPE_MAP = new IdentityHashMap<>();
     private static final Map<TagKey<Fluid>, LiquidFuelType> TAG_TO_TYPE_MAP = new IdentityHashMap<>();
 
@@ -62,7 +62,7 @@ public class LiquidFuelManager {
     }
 
     public static void fillFluidMap() {
-        for (Map.Entry<ResourceLocation, LiquidFuelType> entry : CUSTOM_TYPE_MAP.entrySet()) {
+        for (Map.Entry<Identifier, LiquidFuelType> entry : CUSTOM_TYPE_MAP.entrySet()) {
             LiquidFuelType type = entry.getValue();
             for (Supplier<Fluid> delegate : type.getFluids()) {
                 FLUID_TO_TYPE_MAP.put(delegate.get(), type);
@@ -83,13 +83,13 @@ public class LiquidFuelManager {
         }
 
         @Override
-        protected void apply(@NotNull Map<ResourceLocation, JsonElement> map, @NotNull ResourceManager resourceManager, @NotNull ProfilerFiller profilerFiller) {
+        protected void apply(@NotNull Map<Identifier, JsonElement> map, @NotNull ResourceManager resourceManager, @NotNull ProfilerFiller profilerFiller) {
             clear();
 
-            for (Map.Entry<ResourceLocation, JsonElement> entry : map.entrySet()) {
+            for (Map.Entry<Identifier, JsonElement> entry : map.entrySet()) {
                 JsonElement element = entry.getValue();
                 if (element.isJsonObject()) {
-                    ResourceLocation id = entry.getKey();
+                    Identifier id = entry.getKey();
                     JsonObject object = element.getAsJsonObject();
                     LiquidFuelType type = LiquidFuelType.fromJson(object);
 

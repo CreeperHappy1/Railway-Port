@@ -24,7 +24,7 @@ import com.railwayteam.railways.impl.bogeymenu.v0.BogeyMenuManagerImpl;
 import com.zurrtum.create.content.trains.bogey.BogeyStyle;
 import com.zurrtum.create.foundation.utility.Components;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.jetbrains.annotations.ApiStatus;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -34,10 +34,10 @@ import java.util.List;
 
 public class CategoryEntry {
     private final @NotNull Component name;
-    private final @NotNull ResourceLocation id;
+    private final @NotNull Identifier id;
     private final @NotNull List<BogeyEntry> bogeyEntryList = new ArrayList<>();
 
-    public CategoryEntry(@NotNull Component name, @NotNull ResourceLocation id) {
+    public CategoryEntry(@NotNull Component name, @NotNull Identifier id) {
         this.name = name;
         this.id = id;
     }
@@ -46,7 +46,7 @@ public class CategoryEntry {
         return name;
     }
 
-    public @NotNull ResourceLocation getId() {
+    public @NotNull Identifier getId() {
         return id;
     }
 
