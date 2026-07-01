@@ -26,7 +26,7 @@ import com.zurrtum.create.content.trains.graph.EdgePointType;
 import com.zurrtum.create.content.trains.track.*;
 import com.zurrtum.create.foundation.utility.Components;
 import com.zurrtum.create.foundation.utility.Lang;
-import com.zurrtum.create.foundation.utility.Pair;
+import com.mojang.datafixers.util.Pair;
 import com.tterrag.registrate.util.nullness.NonNullBiFunction;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

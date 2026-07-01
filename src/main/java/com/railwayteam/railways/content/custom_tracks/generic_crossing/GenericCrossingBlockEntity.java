@@ -18,6 +18,7 @@
 
 package com.railwayteam.railways.content.custom_tracks.generic_crossing;
 
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.content.custom_tracks.generic_crossing.TrackShapeLookup.GenericCrossingData;
 import com.railwayteam.railways.mixin_interfaces.IGenericCrossingTrackBE;
 import com.zurrtum.create.content.trains.track.TrackMaterial;
@@ -26,7 +27,6 @@ import com.zurrtum.create.foundation.blockEntity.IMergeableBE;
 import com.zurrtum.create.foundation.blockEntity.SmartBlockEntity;
 import com.zurrtum.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
 import com.zurrtum.create.foundation.utility.Couple;
-import com.zurrtum.create.foundation.utility.Pair;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.level.block.entity.BlockEntity;

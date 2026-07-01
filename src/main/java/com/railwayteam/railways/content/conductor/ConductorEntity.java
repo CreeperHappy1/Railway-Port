@@ -20,6 +20,7 @@ package com.railwayteam.railways.content.conductor;
 
 import com.google.common.collect.ImmutableMap;
 import com.mojang.authlib.GameProfile;
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.content.conductor.toolbox.MountedToolbox;
 import com.railwayteam.railways.content.conductor.vent.VentBlock;
 import com.railwayteam.railways.content.switches.TrackSwitchBlock;
@@ -45,7 +46,6 @@ import com.zurrtum.create.content.trains.entity.Train;
 import com.zurrtum.create.content.trains.schedule.ScheduleRuntime;
 import com.zurrtum.create.foundation.utility.Couple;
 import com.zurrtum.create.foundation.utility.Iterate;
-import com.zurrtum.create.foundation.utility.Pair;
 import com.zurrtum.create.foundation.utility.WorldAttached;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

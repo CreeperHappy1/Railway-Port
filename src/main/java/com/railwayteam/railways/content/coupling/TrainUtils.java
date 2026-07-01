@@ -41,7 +41,7 @@ import com.zurrtum.create.content.trains.signal.TrackEdgePoint;
 import com.zurrtum.create.content.trains.station.GlobalStation;
 import com.zurrtum.create.foundation.utility.Components;
 import com.zurrtum.create.foundation.utility.Couple;
-import com.zurrtum.create.foundation.utility.Pair;
+import com.mojang.datafixers.util.Pair;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.Containers;
 import net.minecraft.world.item.ItemStack;

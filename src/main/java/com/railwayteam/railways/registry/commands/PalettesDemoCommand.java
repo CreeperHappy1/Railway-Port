@@ -19,12 +19,12 @@
 package com.railwayteam.railways.registry.commands;
 
 import com.mojang.brigadier.builder.ArgumentBuilder;
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.content.palettes.PalettesColor;
 import com.railwayteam.railways.registry.CRPalettes;
 import com.railwayteam.railways.registry.CRPalettes.Styles;
 import com.zurrtum.create.foundation.utility.Components;
-import com.zurrtum.create.foundation.utility.Pair;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.commands.arguments.coordinates.BlockPosArgument;

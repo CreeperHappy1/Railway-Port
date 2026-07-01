@@ -23,7 +23,7 @@ import com.zurrtum.create.content.contraptions.actors.psi.PortableFluidInterface
 import com.zurrtum.create.content.fluids.FluidNetwork;
 import com.zurrtum.create.content.fluids.PipeConnection;
 import com.zurrtum.create.foundation.utility.BlockFace;
-import com.zurrtum.create.foundation.utility.Pair;
+import com.mojang.datafixers.util.Pair;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
 import net.fabricmc.fabric.api.transfer.v1.storage.Storage;
 import org.spongepowered.asm.mixin.Mixin;

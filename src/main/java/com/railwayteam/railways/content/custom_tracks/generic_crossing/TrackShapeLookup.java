@@ -18,10 +18,10 @@
 
 package com.railwayteam.railways.content.custom_tracks.generic_crossing;
 
+import com.mojang.datafixers.util.Pair;
 import com.zurrtum.create.content.trains.track.TrackMaterial;
 import com.zurrtum.create.content.trains.track.TrackShape;
 import com.zurrtum.create.foundation.utility.Couple;
-import com.zurrtum.create.foundation.utility.Pair;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.HashMap;

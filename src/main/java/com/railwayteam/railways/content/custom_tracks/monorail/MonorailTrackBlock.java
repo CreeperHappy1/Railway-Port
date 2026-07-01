@@ -40,7 +40,7 @@ import com.zurrtum.create.content.trains.track.TrackPropagator;
 import com.zurrtum.create.content.trains.track.TrackShape;
 import com.zurrtum.create.foundation.utility.AngleHelper;
 import com.zurrtum.create.foundation.utility.Couple;
-import com.zurrtum.create.foundation.utility.Pair;
+import com.mojang.datafixers.util.Pair;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;

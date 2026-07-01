@@ -19,7 +19,7 @@
 package com.railwayteam.railways.content.conductor;
 
 import com.jozufozu.flywheel.core.PartialModel;
-import com.jozufozu.flywheel.util.Pair;
+import com.mojang.datafixers.util.Pair;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;

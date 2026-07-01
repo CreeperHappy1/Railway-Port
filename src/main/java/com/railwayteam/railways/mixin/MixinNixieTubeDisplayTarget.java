@@ -18,11 +18,11 @@
 
 package com.railwayteam.railways.mixin;
 
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.content.distant_signals.IOverridableSignal;
 import com.zurrtum.create.content.redstone.displayLink.DisplayLinkContext;
 import com.zurrtum.create.content.redstone.displayLink.target.NixieTubeDisplayTarget;
 import com.zurrtum.create.content.trains.signal.SignalBlockEntity;
-import com.zurrtum.create.foundation.utility.Pair;
 import net.minecraft.network.chat.MutableComponent;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

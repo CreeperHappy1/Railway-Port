@@ -18,6 +18,7 @@
 
 package com.railwayteam.railways.registry;
 
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.ModSetup;
 import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.base.EnumFilledList;
@@ -38,19 +39,11 @@ import com.railwayteam.railways.content.palettes.smokebox.PalettesSmokeboxBlock;
 import com.railwayteam.railways.content.palettes.trapdoors.PalettesTrapDoorBlock;
 import com.railwayteam.railways.util.BlockStateUtils;
 import com.railwayteam.railways.util.TextUtils;
-import com.zurrtum.create.AllInteractionBehaviours;
-import com.zurrtum.create.AllItemTags;
-import com.zurrtum.create.AllFluidTags;
-import com.zurrtum.create.AllBlockTags;
-import com.zurrtum.create.AllEntityTags;
-import com.zurrtum.create.content.contraptions.behaviour.TrapdoorMovingInteraction;
 import com.zurrtum.create.content.decoration.MetalLadderBlock;
-import com.zurrtum.create.content.decoration.slidingDoor.SlidingDoorMovementBehaviour;
 import com.zurrtum.create.content.kinetics.flywheel.FlywheelBlock;
 import com.zurrtum.create.client.foundation.block.connected.SimpleCTBehaviour;
 import com.zurrtum.create.foundation.data.CreateRegistrate;
 import com.zurrtum.create.client.foundation.item.ItemDescription;
-import com.zurrtum.create.foundation.utility.Pair;
 import com.tterrag.registrate.builders.BlockBuilder;
 import com.tterrag.registrate.providers.ProviderType;
 import com.tterrag.registrate.providers.loot.RegistrateBlockLootTables;

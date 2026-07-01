@@ -18,6 +18,7 @@
 
 package com.railwayteam.railways.content.distant_signals;
 
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.content.semaphore.SemaphoreBlockEntity;
 import com.zurrtum.create.content.redstone.displayLink.DisplayLinkBlockEntity;
 import com.zurrtum.create.content.redstone.displayLink.DisplayLinkContext;
@@ -29,7 +30,6 @@ import com.zurrtum.create.content.redstone.nixieTube.NixieTubeBlockEntity;
 import com.zurrtum.create.content.trains.signal.SignalBlockEntity;
 import com.zurrtum.create.content.trains.signal.SignalBlockEntity.SignalState;
 import com.zurrtum.create.foundation.utility.Components;
-import com.zurrtum.create.foundation.utility.Pair;
 import net.minecraft.network.chat.MutableComponent;
 
 import java.util.Locale;

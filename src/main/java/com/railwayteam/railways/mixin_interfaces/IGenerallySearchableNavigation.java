@@ -18,13 +18,13 @@
 
 package com.railwayteam.railways.mixin_interfaces;
 
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.content.switches.TrackSwitch;
 import com.railwayteam.railways.content.switches.TrackSwitchBlock;
 import com.zurrtum.create.content.trains.graph.TrackEdge;
 import com.zurrtum.create.content.trains.graph.TrackNode;
 import com.zurrtum.create.content.trains.signal.TrackEdgePoint;
 import com.zurrtum.create.foundation.utility.Couple;
-import com.zurrtum.create.foundation.utility.Pair;
 import org.jetbrains.annotations.ApiStatus;
 
 import java.util.Map;

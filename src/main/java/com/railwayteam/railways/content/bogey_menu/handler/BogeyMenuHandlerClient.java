@@ -18,6 +18,7 @@
 
 package com.railwayteam.railways.content.bogey_menu.handler;
 
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.api.bogeymenu.v0.entry.BogeyEntry;
 import com.railwayteam.railways.registry.CRBogeyStyles;
@@ -27,7 +28,6 @@ import com.zurrtum.create.content.trains.bogey.BogeySizes.BogeySize;
 import com.zurrtum.create.content.trains.bogey.BogeyStyle;
 import com.zurrtum.create.content.trains.track.TrackMaterial;
 import com.zurrtum.create.foundation.gui.widget.Indicator;
-import com.zurrtum.create.foundation.utility.Pair;
 import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.*;
 import net.minecraft.resources.Identifier;

@@ -24,7 +24,7 @@ import com.zurrtum.create.AllBogeyStyles;
 import com.zurrtum.create.content.trains.bogey.BogeySizes;
 import com.zurrtum.create.content.trains.bogey.BogeySizes.BogeySize;
 import com.zurrtum.create.content.trains.bogey.BogeyStyle;
-import com.zurrtum.create.foundation.utility.Pair;
+import com.mojang.datafixers.util.Pair;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerPlayer;

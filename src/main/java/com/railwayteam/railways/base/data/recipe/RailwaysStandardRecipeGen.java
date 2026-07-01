@@ -33,7 +33,7 @@ import com.railwayteam.railways.registry.CRTags;
 import com.railwayteam.railways.util.AbstractionUtils;
 import com.zurrtum.create.AllBlocks;
 import com.zurrtum.create.AllItems;
-import com.zurrtum.create.foundation.utility.Pair;
+import com.mojang.datafixers.util.Pair;
 import com.zurrtum.create.foundation.utility.RegisteredObjects;
 import com.tterrag.registrate.util.entry.ItemProviderEntry;
 import net.minecraft.advancements.critereon.ItemPredicate;

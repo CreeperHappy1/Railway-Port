@@ -18,10 +18,10 @@
 
 package com.railwayteam.railways.content.custom_tracks.generic_crossing.fabric;
 
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.mixin_interfaces.IGenericCrossingTrackBE;
 import com.zurrtum.create.content.trains.track.TrackMaterial;
 import com.zurrtum.create.content.trains.track.TrackShape;
-import com.zurrtum.create.foundation.utility.Pair;
 import net.fabricmc.fabric.api.renderer.v1.model.FabricBakedModel;
 import net.fabricmc.fabric.api.renderer.v1.render.RenderContext;
 import net.minecraft.MethodsReturnNonnullByDefault;

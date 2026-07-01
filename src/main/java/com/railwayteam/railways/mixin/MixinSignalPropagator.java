@@ -18,6 +18,7 @@
 
 package com.railwayteam.railways.mixin;
 
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.util.MixinVariables;
 import com.zurrtum.create.content.trains.graph.EdgeData;
 import com.zurrtum.create.content.trains.graph.TrackGraph;
@@ -25,7 +26,6 @@ import com.zurrtum.create.content.trains.graph.TrackNode;
 import com.zurrtum.create.content.trains.signal.SignalBoundary;
 import com.zurrtum.create.content.trains.signal.SignalPropagator;
 import com.zurrtum.create.foundation.utility.Couple;
-import com.zurrtum.create.foundation.utility.Pair;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

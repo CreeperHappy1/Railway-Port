@@ -19,6 +19,7 @@
 package com.railwayteam.railways.registry;
 
 import com.google.common.collect.ImmutableList;
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.api.bogeymenu.v0.BogeyMenuManager;
 import com.railwayteam.railways.api.bogeymenu.v0.entry.CategoryEntry;
@@ -71,7 +72,6 @@ import com.zurrtum.create.content.trains.bogey.BogeySizes;
 import com.zurrtum.create.content.trains.bogey.BogeyStyle;
 import com.zurrtum.create.content.trains.track.TrackMaterial.TrackType;
 import com.zurrtum.create.foundation.utility.Components;
-import com.zurrtum.create.foundation.utility.Pair;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 

@@ -33,7 +33,7 @@ import com.zurrtum.create.content.trains.track.TrackMaterial;
 import com.zurrtum.create.content.trains.track.TrackPlacement;
 import com.zurrtum.create.content.trains.track.TrackShape;
 import com.zurrtum.create.foundation.utility.Iterate;
-import com.zurrtum.create.foundation.utility.Pair;
+import com.mojang.datafixers.util.Pair;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;

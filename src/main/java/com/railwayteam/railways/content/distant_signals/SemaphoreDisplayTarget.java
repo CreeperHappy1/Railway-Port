@@ -18,12 +18,12 @@
 
 package com.railwayteam.railways.content.distant_signals;
 
+import com.mojang.datafixers.util.Pair;
 import com.zurrtum.create.content.redstone.displayLink.DisplayLinkContext;
 import com.zurrtum.create.content.redstone.displayLink.target.DisplayTarget;
 import com.zurrtum.create.content.redstone.displayLink.target.DisplayTargetStats;
 import com.zurrtum.create.content.trains.signal.SignalBlockEntity;
 import com.zurrtum.create.foundation.utility.Components;
-import com.zurrtum.create.foundation.utility.Pair;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 

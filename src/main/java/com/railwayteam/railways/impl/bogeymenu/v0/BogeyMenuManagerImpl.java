@@ -18,12 +18,12 @@
 
 package com.railwayteam.railways.impl.bogeymenu.v0;
 
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.api.bogeymenu.v0.BogeyMenuManager;
 import com.railwayteam.railways.api.bogeymenu.v0.entry.BogeyEntry;
 import com.railwayteam.railways.api.bogeymenu.v0.entry.CategoryEntry;
 import com.zurrtum.create.content.trains.bogey.BogeySizes;
 import com.zurrtum.create.content.trains.bogey.BogeyStyle;
-import com.zurrtum.create.foundation.utility.Pair;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import org.jetbrains.annotations.ApiStatus;

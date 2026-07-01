@@ -54,7 +54,7 @@ import com.zurrtum.create.foundation.advancement.AllAdvancements;
 import com.zurrtum.create.foundation.fluid.CombinedTankWrapper;
 import com.zurrtum.create.foundation.utility.Couple;
 import com.zurrtum.create.foundation.utility.NBTHelper;
-import com.zurrtum.create.foundation.utility.Pair;
+import com.mojang.datafixers.util.Pair;
 import com.zurrtum.create.infrastructure.config.AllConfigs;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.Tag;

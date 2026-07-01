@@ -18,6 +18,7 @@
 
 package com.railwayteam.railways.content.palettes.painting;
 
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.content.palettes.PalettesColor;
 import com.railwayteam.railways.mixin_interfaces.CopycatDuck;
 import com.railwayteam.railways.registry.CRPalettes;
@@ -25,7 +26,6 @@ import com.railwayteam.railways.registry.CRPalettes.Styles;
 import com.railwayteam.railways.registry.CRTags;
 import com.zurrtum.create.content.decoration.copycat.CopycatBlock;
 import com.zurrtum.create.content.decoration.copycat.CopycatBlockEntity;
-import com.zurrtum.create.foundation.utility.Pair;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;

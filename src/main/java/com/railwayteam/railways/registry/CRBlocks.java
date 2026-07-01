@@ -18,6 +18,7 @@
 
 package com.railwayteam.railways.registry;
 
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.ModSetup;
 import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.base.data.BuilderTransformers;
@@ -103,7 +104,6 @@ import com.zurrtum.create.foundation.block.ItemUseOverrides;
 import com.zurrtum.create.foundation.data.CreateRegistrate;
 import com.zurrtum.create.foundation.data.SharedProperties;
 import com.zurrtum.create.foundation.item.ItemDescription;
-import com.zurrtum.create.foundation.utility.Pair;
 import com.zurrtum.create.foundation.utility.VoxelShaper;
 import com.tterrag.registrate.providers.DataGenContext;
 import com.tterrag.registrate.providers.RegistrateBlockstateProvider;

@@ -18,13 +18,13 @@
 
 package com.railwayteam.railways.registry;
 
+import com.mojang.datafixers.util.Pair;
 import com.railwayteam.railways.Railways;
 import com.railwayteam.railways.content.schedule.RedstoneLinkInstruction;
 import com.railwayteam.railways.content.schedule.StationLoadedCondition;
 import com.railwayteam.railways.content.schedule.WaypointDestinationInstruction;
 import com.zurrtum.create.content.trains.schedule.condition.ScheduleWaitCondition;
 import com.zurrtum.create.content.trains.schedule.destination.ScheduleInstruction;
-import com.zurrtum.create.foundation.utility.Pair;
 
 import java.util.function.Supplier;
 
